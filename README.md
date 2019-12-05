@@ -24,12 +24,15 @@ The evaluation would be done mainly on the basis of UI/UX, authenticity of the c
 * **Task 2**: Add a one-player mode where a person can play with a smart bot that never loses **(100 points)**.
 * **Task 3**: Add an option for the player to choose what shape to begin with (X/O) **(50 points)**.
 
+### Deadline:
+The deadline of the above challenge is 19th of December.
+
 ## Instructions to Submit
 -   Fork the project to your GitHub account.
 -   Clone it in your system i.e Linux/Windows.
 -   Create a folder with your github username in your cloned local repository.
 -   Complete the task by adding all the required files in your project.
--   Make sure that you add the files in the seperate folder created and not put the files directly in the home folder.
+-   Make sure that you add the files in the separate folder created and not put the files directly in the home folder.
 -   When done, commit your work locally and push it to origin.
 -   Make a pull request to our repository with proper description.
 -   Let us review your pull request.
