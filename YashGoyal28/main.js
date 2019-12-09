@@ -211,6 +211,17 @@ function computermove(){
 }
 
 function getbestmove(){
+     for(var i=0 ; i<9 ; i++){
+        if(board[i] == "#"){
+            board[i] = marker[virturn[0]];
+            if(checkwin(i+1, virturn[0]) == "win"){
+                board[i] = "#";
+                return i;
+            }else{
+                board[i] = "#";
+            }     
+        }
+    }
     var icandraw = -1;
     for(var i=0 ; i<9 ; i++){
         if(board[i] == "#"){
