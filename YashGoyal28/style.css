@@ -1,0 +1,227 @@
+/* CSS */
+*{
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+}
+body {
+    background-color: #00a8f3;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+div.game-board{
+    width: 604px;
+    height: 604px;
+    margin: 0 auto;
+    background-color: #b03bea;
+    border-radius: 10%; 
+    box-shadow: 10px 15px #68238a;
+}
+div.title{
+    width: 604px;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    color: blue;
+    font-size: 60px;
+    font-family: 'Modak', cursive;
+    text-shadow: 6px 0px rgb(0, 0, 160);
+}
+div.player{
+    width: 604px;
+    padding-top: 0px;
+    color: black;
+    font-size: 40px;
+    font-family: 'Baloo Bhai', cursive;
+}
+input.playername{
+    width : 200px;
+    padding : 0px 20px;
+    margin : 0px 0px;
+    box-sizing: border-box;
+    background-color: #b03bea ;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid black;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    font-size: 35px;
+    font-family: 'Permanent Marker', cursive;
+}
+input.playername:hover {
+    width: 400px;
+}
+input.playername:focus {
+    width: 400px;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+input[type='radio']{ 
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+input[type='checkbox']{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    visibility: hidden; 
+}
+input[type='radio']:after,input[type='checkbox']:after {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    top: 0px;
+    left: -1px;
+    position: relative;
+    background-color: #b03bea;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #68238a;
+    -webkit-transition: background-color 0.4s ease-in-out;
+    transition: background-color 0.4s ease-in-out;
+}
+input[type='radio']:checked:after,input[type='checkbox']:checked:after {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    top: 0px;
+    left: -1px;
+    position: relative;
+    background-color: #481a5f;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #68238a;
+}
+input[type='radio']:checked:hover:after,input[type='checkbox']:checked:hover::after {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    top: 0px;
+    left: -1px;
+    position: relative;
+    background-color: #481a5f;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #68238a;
+}
+input[type='radio']:hover:after,input[type='checkbox']:hover:after {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    top: 0px;
+    left: -1px;
+    position: relative;
+    background-color: #862fb1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #68238a;
+}
+input[type='radio']:checked {
+    cursor: default;
+}
+input[type='submit']{
+    width: 150px;
+    height: 60px;
+    border: 0px solid black;
+    cursor: pointer;
+    background-color: coral;
+    border-radius: 50%;
+    box-shadow: 0 12px 16px 0 rgba(223, 77, 19, 0.63),0 17px 50px 0 rgba(230, 55, 25, 0.19);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 25px;
+    -webkit-transition: background-color 0.4s ease-in-out;
+    transition: background-color 0.4s ease-in-out;
+    outline: none;
+}
+input[type='submit']:hover{
+    background-color: rgb(224, 102, 57);
+}
+input[type='submit']:active{
+    transform: translateY(5px);
+    box-shadow: 0 8px 12px 0 rgba(223, 77, 19, 0.63),0 13px 46px 0 rgba(230, 55, 25, 0.19);
+}
+div[id^="row"] div {
+    width: 200px;
+    height: 200px;
+    border: 4px groove blue;
+    float: left;
+    box-sizing: border-box;
+    font-family: "Permanent Marker", cursive;
+}
+div[id^="row"] div:first-child {border-left: none;}
+div[id^="row"] div:last-child {border-right: none;}
+div[id^="row-1"] div {border-top: none;}
+div[id^="row-3"] div {border-bottom: none;}
+div[id^="row"] {
+    overflow:hidden;
+    clear: both;
+}
+span {
+    font-size: 100px;
+    padding-top: 40px;
+    display: inline-block;    
+}
+#playerturn{
+    font-family: "Permanent Marker", cursive;
+}
+.currentgame{
+    font-size:40px;
+    padding-top: 15px;
+    color: orangered;
+}
+input[type=button],.button {
+    background-color: purple;
+    font-family: "baloo bhai", cursive;
+    color: rgb(9, 5, 70);
+    font-size:40px;
+    border: none;
+    padding: 25px 40px;
+    text-decoration: none;
+    outline: none;
+    margin: 20px 20px;
+    cursor: pointer;
+    border-radius: 40px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    -webkit-transition: background-color 0.4s ease-in-out;
+    transition: background-color 0.4s ease-in-out;
+}
+input[type=button]:hover,.button:hover {
+    background-color: rgb(114, 0, 114);
+}
+input[type=button]:active,.button:active{
+    transform: translateY(5px);
+  	box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24),0 13px 46px 0 rgba(0,0,0,0.19);
+}
+
+
+.button {
+    background-color: purple;
+    font-family: "baloo bhai", cursive;
+    color: rgb(9, 5, 70);
+    font-size:17px;
+    border: none;
+    padding: 7px 15px;
+    text-decoration: none;
+    outline: none;
+    margin: 35px 0px;
+    cursor: pointer;
+    border-radius: 40px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    -webkit-transition: background-color 0.4s ease-in-out;
+    transition: background-color 0.4s ease-in-out;
+}
+.button:hover {
+    background-color: rgb(114, 0, 114);
+}
+.button:active{
+    transform: translateY(5px);
+  	box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24),0 13px 46px 0 rgba(0,0,0,0.19);
+}
