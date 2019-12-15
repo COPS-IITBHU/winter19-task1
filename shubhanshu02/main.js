@@ -193,7 +193,7 @@ function gameOver(gameWon) {
 function declareWinner(who) {
 	let x = document.getElementById("text");
 	x.style.display = "block";
-	x.innerText = "\n\n" + who;
+	x.innerText = "\n" + who;
 }
 
 function checkTie() {

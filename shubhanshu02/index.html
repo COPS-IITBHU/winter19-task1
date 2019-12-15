@@ -12,8 +12,10 @@
 	<div>
         <br>
 		<h1 class="middle">
-                Welcome to Tic Tac Toe Game!
-            </h1>
+                Welcome <br>
+               To<br>
+				Tic Tac Toe Game!
+            </h1>	
 	</div>
 	<br>
 	<br>
@@ -22,17 +24,17 @@
                 Select Game Mode:
             </h3>
 		<br>
-		<input type="radio" name="mode" value="sp" onclick="mode(this.value);">Single Player Mode
-		<input type="radio" name="mode" value="mp" onclick="mode(this.value);">Two Player Mode</div>
+		<button id="mode" value="sp" onclick="mode('sp');">Single Player Mode</button>&nbsp;
+		<button id="mode" value="mp" onclick="mode('mp');">Two Player Mode</button></div>
 	<div id="marker" style="display: none;">
         <br>
         <h3>
                 What would you like to chose?
             </h3>
 		<br>
-		<input type="radio" id="marked" value="X" onclick="markerchoice(this.value);">X
-		<br>
-		<input type="radio" id="marked" value="O" onclick="markerchoice(this.value);">O</div>
+		<button id="marker" value="sp" onclick="markerchoice('X');">X</button>&nbsp;
+		<button id="marker" value="mp" onclick="markerchoice('O');">O</button>
+	</div>
 	<div id="namer">
 		<h3 style="text-decoration: underline;">
                 Enter Player Details
@@ -41,11 +43,11 @@
 		<br>
 		<form id="frm1">Player 1 Name:
 			<input type="text" id="p1name" placeholder="Player 1">
-			<br>Player 2 Name:
+			<br><br>Player 2 Name:
 			<input type="text" id="p2name" placeholder="Player 2">
 			<br>
 			<br>
-			<input type="button" onclick="naming()" value="Submit">
+			<input type="button" id="Submit" onclick="naming()" value="Submit">
 		</form>
 	</div>
 	<div class="game-board" id="board" style="display: none;">
@@ -68,10 +70,10 @@
 			<div id="8" onclick="play(this,256);" class="cell"> </div>
 		</div>
 	</div>
-	<div id="text"></div>
-    <button id="game-reset" onclick="reset();" style="position: static; left: 57.5%;">&nbsp; Reset &nbsp;</button>
+	<div id="text"></div><br>
+	<button id="game-reset" onclick="reset();" style="position: static; left: 57.5%;">&nbsp; Reset &nbsp;</button>
     <a href="https://www.wikihow.com/Play-Tic-Tac-Toe" id="howto">
-        <button>How to Play</button>
+        <button id="htp">How to Play</button>
     </a>
 	<script src="main.js"></script>
 </body>

@@ -20,9 +20,10 @@ html {
 div.game-board {
 	border-radius: 3mm;
 	border: 3px solid blue;
-	width: 306px;
-	height: 339px;
+	width: 309px; 
+	height: 345px; 
 	margin: 0 auto;
+	box-shadow: 10px 10px 90px 15px darkorange;
 }
 div[id^="row"] div:first-child {
 	border-left: none;
@@ -44,18 +45,20 @@ div[id^="row"] {
 	clear: both;
 }
 div[id="text"] {
+	font-family: 'Rock Salt', cursive;
 	font-weight: bold;
-	display: none;
-	border-radius: 1cm;
-	width: 340px;
-	height: 100px;
-	border: 1px solid green;
-	float: left;
-	position: absolute;
-	left: 45%;
-	top: 25%;
-	margin-left: -100px;
-	background-color: sandybrown;
+    box-shadow: 10px 10px 40px deepskyblue;
+    display: none;
+    border-radius: 1cm;
+    width: 340px;
+    height: 100px;
+    border: 3px solid black;
+    float: left;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    margin-left: -100px;
+    background-color: sandybrown;
 }
 section {
 	font-size: 40px;
@@ -64,12 +67,12 @@ section {
 div[id^="row"] div {
 	width: 100px;
 	height: 100px;
-	border: 1px solid green;
+	border: 2px solid green;
 	float: left;
 }
 div.game-board h2 {
 	border-radius: 2mm;
-	border: 2px solid green;
+	border: 2.5px solid blue;
 }
 body {
 	margin: 10px auto;
@@ -87,8 +90,8 @@ div[id="namer"] {
 	display: none;
 	border: 2px solid;
 	width: 360px;
-	height: 200px;
-	background-color: purple;
+	height: 210px;
+	background-color: #980398;
 	border-radius: 5mm;
 	position: absolute;
 	left: 37%;
@@ -97,4 +100,89 @@ a {
     position: absolute;
     right: 1%;
     top: 1%;
+}
+button[id="mode"] {
+	background-color: cyan;
+    border: 2px solid black;
+    padding: 8px 25px;
+    text-align: center;
+    font-weight: bold;
+	font-family: 'Rock Salt',cursive;
+	border-radius: 7mm;
+}
+button[id="mode"]:hover, button[id="marker"]:hover {
+	border: 2px solid gold;
+	transform: scale(1.1);
+}
+button[id="marker"] {
+	background-color: #d168d1;
+    border: 2px solid black;
+    padding: 8px 25px;
+    text-align: center;
+    font-weight: bold;
+	font-family: 'Rock Salt',cursive;
+	border-radius: 7mm;
+	
+}
+button[id="htp"] {
+	background-color: darkorchid;
+    padding: 1px 8px;
+    font-weight: bold;
+    text-align: center;
+    color: goldenrod;
+    font-family: 'Rock Salt',cursive;
+	border-radius: 5mm;
+	animation: htp-animation 10s infinite;
+}
+@keyframes htp-animation {
+	0% {border: 2px solid gold;}
+	25% {
+		border: 2px solid black;
+		transform: scale(1.1);
+	}
+	50% {
+		border: 2px solid red;
+		transform: scale(0.9);
+	}
+	75% {border: 2px solid blue;}
+	100% {
+		border: 2px solid green;
+		transform: scale(1);
+	}
+}
+.cell:hover
+{
+	box-shadow: 0 0 10px #ccc;
+}
+.game-board:hover {
+	border: 3px solid black;
+	box-shadow: 0 0 10px red;
+	box-shadow: 10px 10px 90px 15px darkturquoise;
+}
+h2[id="editor"]:hover {
+	font-size: 6mm;
+	border: 3.5px solid darkcyan;
+	box-shadow: 0 0 10px red;
+}
+button[id="game-reset"] {
+	background-color: darkorchid;
+    padding: 1px 8px;
+	font-weight: bold;
+	font-size: 0.5cm;
+    text-align: center;
+    color: goldenrod;
+	border-radius: 5mm;
+}
+input[id="Submit"] {
+	background-color: darkcyan;
+    padding: 1px 6px;
+	font-size: 4mm;
+    text-align: center;
+    color: goldenrod;
+	border-radius: 5mm;
+}
+input[type="text"] {
+	border-radius: 3mm;
+	background-color: darkgrey;
+	font-family: 'Rock Salt',cursive;
 }
