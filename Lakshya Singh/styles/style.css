@@ -3,6 +3,7 @@ body {
   	background-attachment: fixed;
   	background-position: center;
   	font-family: Girassol;
+  	background-size: cover;
 }
 
 #X, #O {
@@ -13,7 +14,7 @@ body {
 	display: grid;
 	grid-gap: 20px;
 	grid-template-columns: 100px 100px 100px;
-	margin-left: 200px;
+	margin-left: 250px;
 	margin-top: 100px;
 }
 
@@ -24,7 +25,7 @@ body {
 #res {
 	display: block;
 	position: absolute;
-	right: 200px;
+	right: 250px;
 	padding: 10px 20px;
 }
 
