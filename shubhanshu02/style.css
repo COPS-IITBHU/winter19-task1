@@ -1,0 +1,100 @@
+/* CSS */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Orbitron', sans-serif;
+	user-select: none;
+}
+body h1 {
+	text-align: center;
+}
+html {
+	background: url(background.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-webkit-animation: ;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+div.game-board {
+	border-radius: 3mm;
+	border: 3px solid blue;
+	width: 306px;
+	height: 339px;
+	margin: 0 auto;
+}
+div[id^="row"] div:first-child {
+	border-left: none;
+}
+div[id^="row"] div:last-child {
+	border-right: none;
+}
+div[id="row-3"] div:first-child {
+	border-bottom: none;
+}
+div[id="row-3"] div:nth-child(2) {
+	border-bottom: none;
+}
+div[id="row-3"] div:last-child {
+	border-bottom: none;
+}
+div[id^="row"] {
+	margin: 0;
+	clear: both;
+}
+div[id="text"] {
+	font-weight: bold;
+	display: none;
+	border-radius: 1cm;
+	width: 340px;
+	height: 100px;
+	border: 1px solid green;
+	float: left;
+	position: absolute;
+	left: 45%;
+	top: 25%;
+	margin-left: -100px;
+	background-color: sandybrown;
+}
+section {
+	font-size: 40px;
+	font-family: 'Rock Salt', cursive;
+}
+div[id^="row"] div {
+	width: 100px;
+	height: 100px;
+	border: 1px solid green;
+	float: left;
+}
+div.game-board h2 {
+	border-radius: 2mm;
+	border: 2px solid green;
+}
+body {
+	margin: 10px auto;
+	width: 1000px;
+	text-align: center;
+	overflow: hidden;
+}
+b {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	text-align: right;
+}
+div[id="namer"] {
+	display: none;
+	border: 2px solid;
+	width: 360px;
+	height: 200px;
+	background-color: purple;
+	border-radius: 5mm;
+	position: absolute;
+	left: 37%;
+}
+a {
+    position: absolute;
+    right: 1%;
+    top: 1%;
+}

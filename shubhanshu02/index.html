@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Tic Tac Toe</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div>
+        <br>
+		<h1 class="middle">
+                Welcome to Tic Tac Toe Game!
+            </h1>
+	</div>
+	<br>
+	<br>
+	<div id="game-mode" style="display: block;">
+		<h3>
+                Select Game Mode:
+            </h3>
+		<br>
+		<input type="radio" name="mode" value="sp" onclick="mode(this.value);">Single Player Mode
+		<input type="radio" name="mode" value="mp" onclick="mode(this.value);">Two Player Mode</div>
+	<div id="marker" style="display: none;">
+        <br>
+        <h3>
+                What would you like to chose?
+            </h3>
+		<br>
+		<input type="radio" id="marked" value="X" onclick="markerchoice(this.value);">X
+		<br>
+		<input type="radio" id="marked" value="O" onclick="markerchoice(this.value);">O</div>
+	<div id="namer">
+		<h3 style="text-decoration: underline;">
+                Enter Player Details
+            </h3>
+		<br>
+		<br>
+		<form id="frm1">Player 1 Name:
+			<input type="text" id="p1name" placeholder="Player 1">
+			<br>Player 2 Name:
+			<input type="text" id="p2name" placeholder="Player 2">
+			<br>
+			<br>
+			<input type="button" onclick="naming()" value="Submit">
+		</form>
+	</div>
+	<div class="game-board" id="board" style="display: none;">
+		<h2 id="editor" style="font-weight: normal;">
+                Player 1's Turn
+            </h2>
+		<div id="row-1">
+			<div id="0" onclick="play(this,1);" class="cell"> </div>
+			<div id="1" onclick="play(this,2);" class="cell"> </div>
+			<div id="2" onclick="play(this,4);" class="cell"> </div>
+		</div>
+		<div id="row-2">
+			<div id="3" onclick="play(this,8);" class="cell"> </div>
+			<div id="4" onclick="play(this,16);" class="cell"> </div>
+			<div id="5" onclick="play(this,32);" class="cell"> </div>
+		</div>
+		<div id="row-3">
+			<div id="6" onclick="play(this,64);" class="cell"> </div>
+			<div id="7" onclick="play(this,128);" class="cell"> </div>
+			<div id="8" onclick="play(this,256);" class="cell"> </div>
+		</div>
+	</div>
+	<div id="text"></div>
+    <button id="game-reset" onclick="reset();" style="position: static; left: 57.5%;">&nbsp; Reset &nbsp;</button>
+    <a href="https://www.wikihow.com/Play-Tic-Tac-Toe" id="howto">
+        <button>How to Play</button>
+    </a>
+	<script src="main.js"></script>
+</body>
+
+</html>
