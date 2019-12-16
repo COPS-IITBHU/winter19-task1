@@ -1,5 +1,5 @@
 var origBoard = Array.from(Array(9).keys());
-let cells = document.querySelectorAll('.cell');
+var cells = document.querySelectorAll('.cell');
 const winCombos = [
 	[0, 1, 2],
 	[3, 4, 5],
@@ -10,13 +10,13 @@ const winCombos = [
 	[0, 4, 8],
 	[6, 4, 2]
 ]
-let players = [];
-let markers = ["X", "O"];
-let turn = 0;
+var players = [];
+var markers = ["X", "O"];
+var turn = 0;
 players[0] = "Player 1";
 players[1] = "Player 2";
-let editor = document.getElementById("editor");
-let gameplay = null;
+var editor = document.getElementById("editor");
+var gameplay = null;
 
 function mode(clickedMode) {
 	gameplay = clickedMode;
@@ -34,64 +34,57 @@ function markerchoice(chosenMarker) {
 	if (gameplay == 'sp') editor.innerText = "Tic Tac Toe"
 	document.getElementById("marker").style.display = "none";
 	if (gameplay == 'mp') document.getElementById("namer").style.display = "block";
-	else document.getElementById("board").style.display = "block";
+	else document.getElementById("first").style.display = "block";
+}
+
+function firstPlay(answer) {
+	if ((answer == 'Computer')&&(gameplay == 'sp')) {
+		cells[0].innerHTML = "<section>" + markers[1] + "</section>";
+		origBoard[0] = markers[1];
+		cells[0].onclick = " "
+	}
+	document.getElementById("first").style.display = "none";
+	document.getElementById("board").style.display = "block";
 }
 
 function naming() {
 	document.getElementById("namer").style.display = "none";
 	document.getElementById("board").style.display = "block";
 	if (gameplay == 'mp') {
-		let n1 = document.getElementById("p1name").value;
-		let n2 = document.getElementById("p2name").value;
+		var n1 = document.getElementById("p1name").value;
+		var n2 = document.getElementById("p2name").value;
 		if ((n1 != "") && (n1 != " ")) players[0] = n1;
 		if ((n2 != "") && (n1 != " ")) players[1] = n2;
+		editor.innerText = players[0] + "'s turn...";
 	}
 }
 
-function play(clickedDiv, divValue) {
+function play(clickedDiv) {
 	clickedDiv.onclick = " ";
 	if (gameplay == "mp") {
-		if (clickedDiv.innerHTML == " ") {
-			clickedDiv.innerHTML = "<section>" + markers[turn] + "</section>";
-			origBoard[clickedDiv.id] = markers[turn];
-			let gameWon = checkWin(origBoard, markers[0])
-			if (gameWon) gameOver(gameWon)
-			gameWon = checkWin(origBoard, markers[1])
-			if (gameWon) gameOver(gameWon)
-			gameWon = checkTie(origBoard, markers[1])
-			if (gameWon) gameOver(gameWon)
-			togglePlayer();
-		}
-	} else if (gameplay == "sp") {
-		if (clickedDiv.innerHTML == " ") {
-			clickedDiv.innerHTML = "<section>" + markers[turn] + "</section>";
-			origBoard[clickedDiv.id] = markers[turn]
-			let gameWon = checkWin(origBoard, markers[0])
-			if (gameWon) gameOver(gameWon)
-			gameWon = checkWin(origBoard, markers[1])
-			if (gameWon) gameOver(gameWon)
-			checkTie(origBoard, markers[0])
-			let bspt = bestSpot();
-			cells[bspt].innerHTML = "<section>" + markers[1] + "</section>";
-			origBoard[bspt] = markers[1]
-			gameWon = checkWin(origBoard, markers[0])
-			if (gameWon) gameOver(gameWon)
-			gameWon = checkWin(origBoard, markers[1])
-			if (gameWon) gameOver(gameWon)
-			checkTie(origBoard, markers[0])
-		}
-	}
-}
-
-function togglePlayer() {
-	if (turn == 0) turn = 1;
-	else turn = 0;
-	document.getElementById("editor").innerText = players[turn] + "'s turn...";
-}
-
-function computerTurn(bestSpot) {
-	if (bestSpot.innerHTML == " ") {
-		cells[bestSpot].innerHTML = "<section>" + markers[1] + "</section>";
+		clickedDiv.innerHTML = "<section>" + markers[turn] + "</section>";
+		origBoard[clickedDiv.id] = markers[turn];
+		var gameWon = checkWin(origBoard, markers[turn])
+		if (gameWon) gameOver(gameWon)
+		if (turn == 0) {turn = 1;}
+		else turn = 0;
+		editor.innerText = players[turn] + "'s turn...";
+		if((checkWin(origBoard, markers[0]) == null)&&(checkWin(origBoard, markers[1]) == null)) checkTie(origBoard, markers[0])
+	
+	} 
+	else if (gameplay == "sp") {
+		clickedDiv.innerHTML = "<section>" + markers[turn] + "</section>";
+		origBoard[clickedDiv.id] = markers[turn]
+		var gameWon = checkWin(origBoard, markers[0])
+		if (gameWon) gameOver(gameWon)
+		checkTie(origBoard, markers[0])
+		var bspt = bestSpot();
+		cells[bspt].innerHTML = "<section>" + markers[1] + "</section>";
+		origBoard[bspt] = markers[1]
+		cells[bspt].onclick = " "
+		gameWon = checkWin(origBoard, markers[1])
+		if (gameWon) gameOver(gameWon)
+		if((checkWin(origBoard, markers[0]) == null)&&(checkWin(origBoard, markers[1]) == null)) checkTie(origBoard, markers[0])
 	}
 }
 
@@ -106,6 +99,7 @@ function emptysq() {
 function bestSpot() {
 	return minimax(origBoard, markers[1]).index;
 }
+
 
 function minimax(newBoard, player) {
 	var availSpots = emptysq();
@@ -159,9 +153,9 @@ function minimax(newBoard, player) {
 }
 
 function checkWin(board, player) {
-	let plays = board.reduce((a, e, i) => (e === player) ? a.concat(i) : a, []);
-	let gameWon = null;
-	for (let [index, win] of winCombos.entries()) {
+	var plays = board.reduce((a, e, i) => (e === player) ? a.concat(i) : a, []);
+	var gameWon = null;
+	for (var [index, win] of winCombos.entries()) {
 		if (win.every(elem => plays.indexOf(elem) > -1)) {
 			gameWon = {
 				index: index,
@@ -175,12 +169,12 @@ function checkWin(board, player) {
 
 function gameOver(gameWon) {
 	if (gameplay == 'mp') {
-		for (let index of winCombos[gameWon.index]) {
+		for (var index of winCombos[gameWon.index]) {
 			document.getElementById(index).style.backgroundColor = gameWon.player == markers[0] ? "green" : "blue";
 			declareWinner(gameWon.player == markers[0] ? (players[0] + " wins!") : players[1] + " wins!");
 		}
 	} else if (gameplay == 'sp') {
-		for (let index of winCombos[gameWon.index]) {
+		for (var index of winCombos[gameWon.index]) {
 			document.getElementById(index).style.backgroundColor = gameWon.player == markers[0] ? "green" : "red";
 			declareWinner(gameWon.player == markers[0] ? "You win!" : "You lose.");
 		}
@@ -191,7 +185,7 @@ function gameOver(gameWon) {
 }
 
 function declareWinner(who) {
-	let x = document.getElementById("text");
+	var x = document.getElementById("text");
 	x.style.display = "block";
 	x.innerText = "\n" + who;
 }

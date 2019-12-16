@@ -50,24 +50,34 @@
 			<input type="button" id="Submit" onclick="naming()" value="Submit">
 		</form>
 	</div>
+	<div id="first">
+			<br>
+			<h3>
+					Who would play first?
+				</h3>
+			<br>
+			<button id="fir" onclick="firstPlay('Player');">Player 1 </button>&nbsp;
+			<button id="fir" onclick="firstPlay('Computer');">Computer</button>
+		
+	</div>
 	<div class="game-board" id="board" style="display: none;">
 		<h2 id="editor" style="font-weight: normal;">
                 Player 1's Turn
             </h2>
 		<div id="row-1">
-			<div id="0" onclick="play(this,1);" class="cell"> </div>
-			<div id="1" onclick="play(this,2);" class="cell"> </div>
-			<div id="2" onclick="play(this,4);" class="cell"> </div>
+			<div id="0" onclick="play(this);" class="cell"> </div>
+			<div id="1" onclick="play(this);" class="cell"> </div>
+			<div id="2" onclick="play(this);" class="cell"> </div>
 		</div>
 		<div id="row-2">
-			<div id="3" onclick="play(this,8);" class="cell"> </div>
-			<div id="4" onclick="play(this,16);" class="cell"> </div>
-			<div id="5" onclick="play(this,32);" class="cell"> </div>
+			<div id="3" onclick="play(this);" class="cell"> </div>
+			<div id="4" onclick="play(this);" class="cell"> </div>
+			<div id="5" onclick="play(this);" class="cell"> </div>
 		</div>
 		<div id="row-3">
-			<div id="6" onclick="play(this,64);" class="cell"> </div>
-			<div id="7" onclick="play(this,128);" class="cell"> </div>
-			<div id="8" onclick="play(this,256);" class="cell"> </div>
+			<div id="6" onclick="play(this);" class="cell"> </div>
+			<div id="7" onclick="play(this);" class="cell"> </div>
+			<div id="8" onclick="play(this);" class="cell"> </div>
 		</div>
 	</div>
 	<div id="text"></div><br>

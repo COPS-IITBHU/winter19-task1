@@ -110,7 +110,7 @@ button[id="mode"] {
 	font-family: 'Rock Salt',cursive;
 	border-radius: 7mm;
 }
-button[id="mode"]:hover, button[id="marker"]:hover {
+button[id="mode"]:hover, button[id="marker"]:hover, button[id="fir"]:hover {
 	border: 2px solid gold;
 	transform: scale(1.1);
 }
@@ -186,3 +186,22 @@ input[type="text"] {
 	background-color: darkgrey;
 	font-family: 'Rock Salt',cursive;
 }
+div[id="first"] {
+	display: none;
+	border: 2px solid;
+	width: 360px;
+	height: 150px;
+	background-color: #980398;
+	border-radius: 5mm;
+	position: absolute;
+	left: 37%;
+}
+button[id="fir"] {
+	background-color: #d168d1;
+    border: 2px solid black;
+    padding: 8px 25px;
+    text-align: center;
+    font-weight: bold;
+	font-family: 'Rock Salt',cursive;
+	border-radius: 7mm;
+	
