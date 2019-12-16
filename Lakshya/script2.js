@@ -58,12 +58,6 @@ let board = [
 		[0,0,0],
 	]
 
-function dp(){
-	document.getElementById("start").style.display = "none";
-	document.getElementById("dp").style.display = "block";
-
-}
-
 const x = document.getElementById("X");
 const o = document.getElementById("O");
 
@@ -72,6 +66,14 @@ let num1 = 0;
 let num2 = 0;
 
 let Play1, Play2;
+
+let player1 = prompt('Player1 enter your Name please','Player1');
+let player2 = prompt('Player2 enter your Name please','Player2');
+
+while(player1 == null || player2 == null){
+	player1 = prompt('Player1 enter your Name please','Player1');
+	player2 = prompt('Player2 enter your Name please','Player2');
+}
 
 function start(element,count){
 	Play1 = element.innerHTML;
@@ -87,7 +89,7 @@ function start(element,count){
 function add_dp(element){
 	
 	if(counter == -1){
-		alert("Player 1 select X or O")
+		alert(`${player1} select X or O`)
 		return;
 	}
 
@@ -111,7 +113,7 @@ function add_dp(element){
 			getResult(board) == Play1 ? num1++ : num2++;
 
 			document.getElementById("Score").style.display = "block";
-			document.getElementById("Score").innerHTML = (getResult(board) == Play1 ? "Player1 wins": "Player2 wins");
+			document.getElementById("Score").innerHTML = (getResult(board) == Play1 ? `${player1} wins`: `${player2} wins`);
 			document.querySelectorAll('.input').forEach(elem => {
   			elem.disabled = true;
 			});
@@ -136,5 +138,10 @@ function resetBoardDp(){
 
 function getScoreDp(){
 	document.getElementById("Score").style.display = "block";
-	document.getElementById("Score").innerHTML = `Player1 : ${num1}<br><br>Player2 : ${num2}`;
+	document.getElementById("Score").innerHTML = `${player1} : ${num1}<br><br>${player2} : ${num2}`;
+}
+
+function resetScore(){
+	num1 = 0;
+	num2 = 0;
 }

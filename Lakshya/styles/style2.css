@@ -7,8 +7,8 @@ body {
   	margin-top: 25px;
 }
 
-#X, #O, #res {
-	padding:10px 20px; 
+#X, #O {
+	padding:10px 10px; 
 }
 
 .container {
@@ -16,11 +16,7 @@ body {
 	grid-gap: 10px;
 	grid-template-columns: 100px 100px 100px;
 	margin-left: 250px;
-	margin-top: 100px;
-}
-
-#top {
-	margin-top: 10px;
+	margin-top: 50px;
 }
 
 #res, #resBoard, #Scrdp {
@@ -55,3 +51,35 @@ button[id^="item"] {
 	padding-top: 10px;
 	padding-bottom: 2px;
 }
+
+h3 {
+	font-size: 25px;
+	width: 180px;
+}
+
+h3:hover , h1:hover{
+	text-shadow: 2px 2px 5px  rgb(174, 53, 47);
+}
+
+button:hover {
+	position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    color: white;
+    background-color: rgb(174, 53, 47);
+}
+
+#scrReset {
+	display: block;
+	position: fixed;
+	right: 2%;
+	top: 2%;
+}
+
+h1{
+	font-size: 60px;
+	text-decoration: underline;
+	width: 300px;
+}
+
