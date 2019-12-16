@@ -1,0 +1,57 @@
+body {
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-position: center;
+  	font-family: Girassol;
+  	background-size: cover;
+  	margin-top: 25px;
+}
+
+#X, #O, #res {
+	padding:10px 20px; 
+}
+
+.container {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 100px 100px 100px;
+	margin-left: 250px;
+	margin-top: 100px;
+}
+
+#top {
+	margin-top: 10px;
+}
+
+#res, #resBoard, #Scrdp {
+	display: block;
+	float: right;
+	padding: 10px 20px;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+button[id^="item"] {
+  background-color: rgb(174, 53, 47);
+  border: none;
+  color: white;
+  padding: 20px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+
+}
+
+#Score {
+	display: none;
+	margin-top: 100px;
+	margin-left: 250px;
+	font-size: 25px;
+	background-color: rgb(174, 53, 47);
+	width: 320px;
+	color: White;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 2px;
+}

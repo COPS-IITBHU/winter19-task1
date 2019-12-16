@@ -7,10 +7,20 @@
 	<title>Tic Tac Toe</title>
 </head>
 <body background="images/background.jpg">
+		<center>
+			<h1> Tic Tac Toe </h1>
+		</center>
+		<div id="start">
+		<h3> Select Your Preferred Mode :  </h3>
+		<button id="dpb" onclick="dp()"> Dual Player Mode </button>
+		<button id ="spb" > Single Player Mode</button> 
+		</div>
+
+
 	<div id="dp">
 		<center id="top">
-			<button id="X" onclick="start(this,1)"> <strong>X </strong></button>
-			<button id="O" onclick="start(this,0);"><strong>O</strong></button>
+			<button id="X" onclick="start(this,1)"> <strong> Turn X </strong></button>
+			<button id="O" onclick="start(this,0);"><strong> Turn O </strong></button>
 		</center>
 
 		<div class="container">
