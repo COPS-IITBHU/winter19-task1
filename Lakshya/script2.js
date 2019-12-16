@@ -61,7 +61,7 @@ let board = [
 const x = document.getElementById("X");
 const o = document.getElementById("O");
 
-let counter = -1;
+let counter = -1, max;
 let num1 = 0;
 let num2 = 0;
 
@@ -84,6 +84,7 @@ function start(element,count){
 	counter = count;
 	x.disabled = true;
 	o.disabled = true;
+	max = count + 9;
 }
 
 function add_dp(element){
@@ -108,6 +109,7 @@ function add_dp(element){
 	}
 
 	counter++;
+
 	if(counter > 4){
 		if(getResult(board)!= undefined){
 			getResult(board) == Play1 ? num1++ : num2++;
@@ -118,6 +120,11 @@ function add_dp(element){
   			elem.disabled = true;
 			});
 		}
+	}
+	
+	if(counter == max){
+		document.getElementById("Score").style.display = "block";
+		document.getElementById("Score").innerHTML = 'Tie Game';
 	}
 	
 }
