@@ -19,7 +19,7 @@ body {
 	margin-top: 50px;
 }
 
-#res, #resBoard, #Scrdp {
+#res, #resBoard {
 	display: block;
 	float: right;
 	padding: 10px 20px;
@@ -28,7 +28,7 @@ body {
 	margin-right: 10px;
 }
 
-button[id^="item"] {
+button.input {
   background-color: rgb(174, 53, 47);
   border: none;
   color: white;
@@ -68,14 +68,6 @@ button:hover {
             box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     color: white;
     background-color: rgb(174, 53, 47);
-}
-
-#scrReset {
-	display: block;
-	float: right;
-	margin-right: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
 }
 
 h1{
