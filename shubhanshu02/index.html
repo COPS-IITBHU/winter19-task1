@@ -10,7 +10,7 @@
 
 <body>
 	<div>
-        <br>
+		<br>
 		<h1 class="middle">
                 Welcome <br>
                To<br>
@@ -25,10 +25,11 @@
             </h3>
 		<br>
 		<button id="mode" value="sp" onclick="mode('sp');">Single Player Mode</button>&nbsp;
-		<button id="mode" value="mp" onclick="mode('mp');">Two Player Mode</button></div>
+		<button id="mode" value="mp" onclick="mode('mp');">Two Player Mode</button>
+	</div>
 	<div id="marker" style="display: none;">
-        <br>
-        <h3>
+		<br>
+		<h3>
                 What would you like to chose?
             </h3>
 		<br>
@@ -43,7 +44,8 @@
 		<br>
 		<form id="frm1">Player 1 Name:
 			<input type="text" id="p1name" placeholder="Player 1">
-			<br><br>Player 2 Name:
+			<br>
+			<br>Player 2 Name:
 			<input type="text" id="p2name" placeholder="Player 2">
 			<br>
 			<br>
@@ -51,14 +53,13 @@
 		</form>
 	</div>
 	<div id="first">
-			<br>
-			<h3>
+		<br>
+		<h3>
 					Who would play first?
 				</h3>
-			<br>
-			<button id="fir" onclick="firstPlay('Player');">Player 1 </button>&nbsp;
-			<button id="fir" onclick="firstPlay('Computer');">Computer</button>
-		
+		<br>
+		<button id="fir" onclick="firstPlay('Player');">Player 1</button>&nbsp;
+		<button id="fir" onclick="firstPlay('Computer');">Computer</button>
 	</div>
 	<div class="game-board" id="board" style="display: none;">
 		<h2 id="editor" style="font-weight: normal;">
@@ -80,11 +81,12 @@
 			<div id="8" onclick="play(this);" class="cell"> </div>
 		</div>
 	</div>
-	<div id="text"></div><br>
+	<div id="text"></div>
+	<br>
 	<button id="game-reset" onclick="reset();" style="position: static; left: 57.5%;">&nbsp; Reset &nbsp;</button>
-    <a href="https://www.wikihow.com/Play-Tic-Tac-Toe" id="howto">
-        <button id="htp">How to Play</button>
-    </a>
+	<a href="https://www.wikihow.com/Play-Tic-Tac-Toe" id="howto">
+		<button id="htp">How to Play</button>
+	</a>
 	<script src="main.js"></script>
 </body>
 

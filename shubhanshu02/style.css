@@ -20,8 +20,8 @@ html {
 div.game-board {
 	border-radius: 3mm;
 	border: 3px solid blue;
-	width: 309px; 
-	height: 345px; 
+	width: 309px;
+	height: 345px;
 	margin: 0 auto;
 	box-shadow: 10px 10px 90px 15px darkorange;
 }
@@ -47,18 +47,18 @@ div[id^="row"] {
 div[id="text"] {
 	font-family: 'Rock Salt', cursive;
 	font-weight: bold;
-    box-shadow: 10px 10px 40px deepskyblue;
-    display: none;
-    border-radius: 1cm;
-    width: 340px;
-    height: 100px;
-    border: 3px solid black;
-    float: left;
-    position: absolute;
-    left: 45%;
-    top: 45%;
-    margin-left: -100px;
-    background-color: sandybrown;
+	box-shadow: 10px 10px 40px deepskyblue;
+	display: none;
+	border-radius: 1cm;
+	width: 340px;
+	height: 100px;
+	border: 3px solid black;
+	float: left;
+	position: absolute;
+	left: 45%;
+	top: 45%;
+	margin-left: -100px;
+	background-color: sandybrown;
 }
 section {
 	font-size: 40px;
@@ -89,7 +89,7 @@ b {
 div[id="namer"] {
 	display: none;
 	border: 2px solid;
-	width: 360px;
+	width: 400px;
 	height: 210px;
 	background-color: #980398;
 	border-radius: 5mm;
@@ -97,45 +97,48 @@ div[id="namer"] {
 	left: 37%;
 }
 a {
-    position: absolute;
-    right: 1%;
-    top: 1%;
+	position: absolute;
+	right: 1%;
+	top: 1%;
 }
 button[id="mode"] {
 	background-color: cyan;
-    border: 2px solid black;
-    padding: 8px 25px;
-    text-align: center;
-    font-weight: bold;
-	font-family: 'Rock Salt',cursive;
+	border: 2px solid black;
+	padding: 8px 25px;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Rock Salt', cursive;
 	border-radius: 7mm;
 }
-button[id="mode"]:hover, button[id="marker"]:hover, button[id="fir"]:hover {
+button[id="mode"]:hover,
+button[id="marker"]:hover,
+button[id="fir"]:hover {
 	border: 2px solid gold;
 	transform: scale(1.1);
 }
 button[id="marker"] {
 	background-color: #d168d1;
-    border: 2px solid black;
-    padding: 8px 25px;
-    text-align: center;
-    font-weight: bold;
-	font-family: 'Rock Salt',cursive;
+	border: 2px solid black;
+	padding: 8px 25px;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Rock Salt', cursive;
 	border-radius: 7mm;
-	
 }
 button[id="htp"] {
 	background-color: darkorchid;
-    padding: 1px 8px;
-    font-weight: bold;
-    text-align: center;
-    color: goldenrod;
-    font-family: 'Rock Salt',cursive;
+	padding: 1px 8px;
+	font-weight: bold;
+	text-align: center;
+	color: goldenrod;
+	font-family: 'Rock Salt', cursive;
 	border-radius: 5mm;
 	animation: htp-animation 10s infinite;
 }
 @keyframes htp-animation {
-	0% {border: 2px solid gold;}
+	0% {
+		border: 2px solid gold;
+	}
 	25% {
 		border: 2px solid black;
 		transform: scale(1.1);
@@ -144,14 +147,15 @@ button[id="htp"] {
 		border: 2px solid red;
 		transform: scale(0.9);
 	}
-	75% {border: 2px solid blue;}
+	75% {
+		border: 2px solid blue;
+	}
 	100% {
 		border: 2px solid green;
 		transform: scale(1);
 	}
 }
-.cell:hover
-{
+.cell:hover {
 	box-shadow: 0 0 10px #ccc;
 }
 .game-board:hover {
@@ -166,25 +170,25 @@ h2[id="editor"]:hover {
 }
 button[id="game-reset"] {
 	background-color: darkorchid;
-    padding: 1px 8px;
+	padding: 1px 8px;
 	font-weight: bold;
 	font-size: 0.5cm;
-    text-align: center;
-    color: goldenrod;
+	text-align: center;
+	color: goldenrod;
 	border-radius: 5mm;
 }
 input[id="Submit"] {
 	background-color: darkcyan;
-    padding: 1px 6px;
+	padding: 1px 6px;
 	font-size: 4mm;
-    text-align: center;
-    color: goldenrod;
+	text-align: center;
+	color: goldenrod;
 	border-radius: 5mm;
 }
 input[type="text"] {
 	border-radius: 3mm;
 	background-color: darkgrey;
-	font-family: 'Rock Salt',cursive;
+	font-family: 'Rock Salt', cursive;
 }
 div[id="first"] {
 	display: none;
@@ -198,10 +202,10 @@ div[id="first"] {
 }
 button[id="fir"] {
 	background-color: #d168d1;
-    border: 2px solid black;
-    padding: 8px 25px;
-    text-align: center;
-    font-weight: bold;
-	font-family: 'Rock Salt',cursive;
+	border: 2px solid black;
+	padding: 8px 25px;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Rock Salt', cursive;
 	border-radius: 7mm;
-	
+}
