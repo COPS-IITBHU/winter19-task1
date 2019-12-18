@@ -1,0 +1,68 @@
+body {
+  background-color: lightblue;
+}
+h1 {
+  font-family: cursive;
+}
+.center {
+  text-align: center;
+}
+.playable {
+  font-family: cursive;
+  width: 120px;
+  height: 120px;
+  font-size: 50px;
+  text-align: center;
+  background-color: yellow;
+  color: red;
+}
+.nonplay {
+  font-family: monospace;
+  width: 170px;
+  height: 30px;
+  background-color: lightpink;
+  color: indigo;
+  border: 2px solid hotpink;
+}
+.bottombutt {
+  font-family: monospace;
+  width: 70px;
+  height: 30px;
+  background-color: lightgoldenrodyellow;
+  color: indigo;
+  border: 2px solid gold;
+}
+.top {
+  border-bottom: 2px solid black;
+}
+.med {
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+}
+.bot {
+  border-top: 2px solid black;
+}
+.right {
+  border-left: 2px solid black;
+}
+.left {
+  border-right: 2px solid black;
+}
+.mid {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+#myDialog {
+  text-align: center;
+  font-size: 50px;
+  line-height: 100px;
+  display: none;
+  width: 360px;
+  height: 100px;
+  border: 3px solid black;
+  position: absolute;
+  left: 45%;
+  top: 15%;
+  margin-left: -100px;
+  background-color: sandybrown;
+}

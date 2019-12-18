@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="center">Tic Tac Toe</h1>
+    <br />
+    <br />
+    <br />
+    <div class="center">
+      <button type="button" id="Single" class="nonplay" onclick="single()">
+        Single Player Mode
+      </button>
+      <button type="button" id="Multi" class="nonplay" onclick="multiple()">
+        Multi Player Mode
+      </button>
+      <br />
+      <br />
+      <button
+        type="button"
+        id="X"
+        class="nonplay"
+        onclick="xClicked()"
+        style="display: none;"
+      >
+        Choose X
+      </button>
+      <button
+        type="button"
+        id="O"
+        class="nonplay"
+        onclick="oClicked()"
+        style="display: none;"
+      >
+        Choose O
+      </button>
+      <br />
+      <br />
+      <div id="myDialog"></div>
+      <button
+        type="button"
+        id="comp"
+        class="nonplay"
+        onclick="comput()"
+        style="display: none;"
+      >
+        Computer Plays First
+      </button>
+      <button
+        type="button"
+        id="play"
+        class="nonplay"
+        onclick="play()"
+        style="display: none;"
+      >
+        Player Plays First
+      </button>
+      <br />
+      <br />
+      <button
+        type="button"
+        id="tl"
+        onclick="clicklol(1)"
+        class="playable top left"
+      >
+        &nbsp;</button
+      ><button
+        type="button"
+        id="tm"
+        onclick="clicklol(2)"
+        class="playable top mid"
+      >
+        &nbsp;</button
+      ><button
+        type="button"
+        id="tr"
+        onclick="clicklol(3)"
+        class="playable top right"
+      >
+        &nbsp;
+      </button>
+      <br />
+      <button
+        type="button"
+        id="ml"
+        onclick="clicklol(4)"
+        class="playable med left"
+      >
+        &nbsp;</button
+      ><button
+        type="button"
+        id="mm"
+        onclick="clicklol(5)"
+        class="playable med mid"
+      >
+        &nbsp;</button
+      ><button
+        type="button"
+        id="mr"
+        onclick="clicklol(6)"
+        class="playable med right"
+      >
+        &nbsp;
+      </button>
+      <br />
+      <button
+        type="button"
+        id="bl"
+        onclick="clicklol(7)"
+        class="playable bot left"
+      >
+        &nbsp;</button
+      ><button
+        type="button"
+        id="bm"
+        onclick="clicklol(8)"
+        class="playable bot mid"
+      >
+        &nbsp;</button
+      ><button
+        type="button"
+        id="br"
+        onclick="clicklol(9)"
+        class="playable bot right"
+      >
+        &nbsp;
+      </button>
+      <br />
+      <br />
+      <button
+        type="button"
+        class="bottombutt"
+        onclick="window.location.reload()"
+      >
+        Reload
+      </button>
+      <button
+        type="button"
+        id="rematch"
+        class="bottombutt"
+        onclick="rematch()"
+        style="display: none;"
+      >
+        Rematch
+      </button>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
