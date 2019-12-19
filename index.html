@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <!-- <script type="text/javascript">
+    console.log('welcome')
+        </script> -->
+<h1>Welcome to Tic Tac Toe</h1>
+<p id='p'>Choose The Option</p>
+<button class='bt' id='bt1'>Single Player</button>
+<button class='bt' id ='bt2'>MultiPlayer</button>
+<br>
+<button class='btn' id='bt3'>X</button>
+<button class='btn' id ='bt4'>O</button>
+<div id="turn"></div>
+<table>
+<tr class="row" id="row1">
+    <td class="col" id="box1" onclick="printx('1')"></td>
+    <td class="col" id="box2" onclick="printx('2')"></td>
+    <td class="col" id="box3" onclick="printx('3')"></td>
+</tr>
+<tr class="row">
+        <td class="col" id="box4" onclick="printx('4')"></td>
+        <td class="col" id="box5" onclick="printx('5')"></td>
+        <td class="col" id="box6" onclick="printx('6')"></td>
+</tr>
+<tr class="row">
+            <td class="col" id="box7" onclick="printx('7')"></td>
+            <td class="col" id="box8" onclick="printx('8')"></td>
+            <td class="col" id="box9" onclick="printx('9')"></td>
+</tr>
+</table>
+<button id="res">Restart</button>
+<script src="main.js"></script>
+</body>
+<link rel="stylesheet" href="style.css">
+</html>
