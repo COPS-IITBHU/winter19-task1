@@ -1,0 +1,103 @@
+td {
+  border:  2px solid #333;
+  height:  100px;
+  width:  100px;
+  text-align:  center;
+  vertical-align:  middle;
+  font-family:  "Comic Sans MS", cursive, sans-serif;
+  font-size:  70px;
+  cursor: pointer;
+}
+body{
+  background-color: pink;
+}
+.he{
+  border-radius: 10px;
+  background-color: orange;
+  text-align: center;
+  font-family: cursive;
+}
+.a{
+  border-radius: 10px;
+  margin-top: 400px;
+  margin-left: 46.5%;
+  font-family: cursive;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #9B59B6;
+}
+#r{
+  color: green;
+}
+table {
+  border-collapse: collapse;
+  position:   absolute;
+  left: 50%;
+  margin-left: -155px;
+  top: 140px;
+}
+
+table tr:first-child td {
+  border-top: 0;
+}
+
+table tr:last-child td {
+  border-bottom: 0;
+}
+
+table tr td:first-child {
+  border-left: 0;
+}
+table tr td:last-child {
+  border-right: 0;
+}
+
+.endgame {
+  display: none;
+  width:  200px;
+  top: 150px;
+  background-color: rgba(205, 133, 63, 0.8);
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-size: 2em; 
+}
+.IN{
+  font-color: red;
+  font-size: 1.5em;
+}
+.selectSym{
+  display: none;
+  width: 220px;
+  top: 166px;
+  background-color: rgba(205, 133, 63, 0.8);
+  left: 50%;
+  position: absolute;
+  margin-left: -110px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  text-align: center;
+  border-radius: 10px;
+  color: yellow;
+  font-size: 2em; 
+}
+
+.selectSym button{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size:  50px;
+  width: 70px;
+}
+
+.selectSym  button:first-of-type {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.selectSym  button:last-of-type {
+  margin-left: 10px;
+  cursor: pointer;
+}
