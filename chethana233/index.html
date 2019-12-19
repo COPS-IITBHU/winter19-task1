@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css"><link href="https://fonts.googleapis.com/css?family=Girassol&display=swap" rel="stylesheet">
+    
+  <script src="script.js"></script>
+  <title>TIC TAC TOE</title>
+     
+  
+</head>
+<body >
+
+     <h1 id="game-display">WELCOME TO TIC TAC TOE GAME</h1>
+   
+    
+<div id="nop" style="display: block;">
+        <h2>
+                Enter the number of players
+            </h2>
+        <br>
+        <button id="mode" class="abc" value="sp" onclick="nopl('sp');">Single Player</button>&nbsp;
+        <button id="mode" class="abc" value="mp" onclick="nopl('mp');">Two Players</button></div>
+
+
+
+
+    <div id="mark" style="display: none;">
+        <br>
+      <h2>
+                What would you like to choose?
+            </h2>
+        <br>
+        <button id="mark" value="sp" onclick="choice('X'); namer()  ">X</button>&nbsp;
+        <button id="mark" value="mp" onclick="choice('O');playersName();" >O</button>
+
+    </div>
+        <div id="name" style="display: none;">
+        <h2>
+                Enter name of each player
+            </h2>
+        <br>
+        <br>
+        <form id="form1" class="sf"> Player 1 Name:
+            <input type="text" id="p1name" placeholder="Player 1">
+            <br>
+            <br>
+            Player 2 Name:
+            <input type="text" id="p2name" placeholder="Player 2">
+            <br>
+            <br>
+            <input type="button" id="Submit" class="sub" onclick="playersName(); namer()" value="Submit">
+        </form>
+    </div>
+
+
+
+
+
+    <div class="game-board" id="board2" style="display: none;">
+    <div id="row-1">
+    <div id="zero" onclick="play(this,0,0);"></div>
+    <div id="one" onclick="play(this,0,1);"></div>
+    <div id="two" onclick="play(this,0,2);"></div>
+   </div>
+   <div id="row-2">
+    <div id="three" onclick="play(this,1,0);"></div>
+    <div id="four" onclick="play(this,1,1);"></div>
+    <div id="five" onclick="play(this,1,2);"></div>
+   </div>
+   <div id="row-3">
+    <div id="six" onclick="play(this,2,0);"></div>
+    <div id="seven" onclick="play(this,2,1);"></div>
+    <div id="eight" onclick="play(this,2,2);"></div>
+   </div> 
+   
+  </div>
+</body>
+</html>
