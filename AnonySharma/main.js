@@ -145,7 +145,7 @@ function basStartKarRhaHoon() {
 
 function StartGame() {
     document.querySelector(".winner").style.display = "none";
-
+    turnPL=0;
     arr = Array.from(Array(9).keys());
     for (var i = 0; i < cells.length; i++) {
         cells[i].innerText = '';
