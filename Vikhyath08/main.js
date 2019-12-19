@@ -82,7 +82,7 @@ function clicklol(pos /*denotes position of button clicked*/) {
   if (count == 27) return; // Makes sure that either 'X' or 'O' has to be chosen for game start
   if (sing) {
     // Goes to the Single Player Mode Option
-    if (count == 0) play(); // If the user does not Select "Computer First" or "Player First" buttons, it is assumed "Computer First"
+    if (count == 0) play(); // If the user does not Select "Computer First" or "Player First" buttons, it is assumed "Player First"
     singlePlayerMode(pos);
     return;
   }
