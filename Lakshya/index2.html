@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="styles/style2.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Girassol&display=swap" rel="stylesheet">
-	<title>Tic Tac Toe</title>
-	
+	<link rel="icon" type="image/png" href="images/icon.png" />
+	<title>Human Battle</title>
+
 </head>
-<body background="images/background.jpg">
-		<center>
-			<h1> Tic Tac Toe </h1>
-			<h3> Dual Player Mode </h3> 
-		</center>
+
+<body background="images/background2.jpg">
+	<center>
+		<h1> Tic Tac Toe </h1>
+		<h3> Dual Player Mode </h3>
+	</center>
 
 	<div id="dp">
 		<center id="top">
 			<button id="X" onclick="start(this,1)">Turn X</button>
 			<button id="O" onclick="start(this,0);">Turn O</button>
 		</center>
-		<button id="scrReset" onclick="resetScore()"> Reset Score </button>
 		<div class="container">
-			<button class = "input" id="item0" onclick="add_dp(this)">  </button>
-			<button class = "input" id="item1" onclick="add_dp(this)">  </button>
-			<button class = "input" id="item2" onclick="add_dp(this)">  </button>
-			<button class = "input" id="item3" onclick="add_dp(this)">  </button>
-			<button class = "input" id="item4" onclick="add_dp(this)">  </button>
-			<button class = "input" id="item5" onclick="add_dp(this)">  </button>
-			<button class = "input" id="item6" onclick="add_dp(this)">  </button>
-			<button class = "input" id="item7" onclick="add_dp(this)">  </button>
-			<button class = "input" id="item8" onclick="add_dp(this)">  </button>
+			<button class="input" id="item0" onclick="add_dp(this)"> </button>
+			<button class="input" id="item1" onclick="add_dp(this)"> </button>
+			<button class="input" id="item2" onclick="add_dp(this)"> </button>
+			<button class="input" id="item3" onclick="add_dp(this)"> </button>
+			<button class="input" id="item4" onclick="add_dp(this)"> </button>
+			<button class="input" id="item5" onclick="add_dp(this)"> </button>
+			<button class="input" id="item6" onclick="add_dp(this)"> </button>
+			<button class="input" id="item7" onclick="add_dp(this)"> </button>
+			<button class="input" id="item8" onclick="add_dp(this)"> </button>
 		</div>
+		<div id="Score"></div>
+		<button id="scrReset" onclick="resetScore()"> Reset Score </button>
 		<button id="Scrdp" onclick="getScoreDp()">Show Score</button>
-		<div id="Score"></div> 
 		<button onclick="resetBoardDp()" id="resBoard"> Reset Board </button>
 	</div>
 
 	<button onclick="location.href='index.html'" id="res">Reset Mode</button>
-	
+
 
 	<script src="scripts/script2.js"></script>
 </body>
+
 </html>

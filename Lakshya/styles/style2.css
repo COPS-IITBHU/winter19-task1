@@ -1,86 +1,171 @@
-body {
-	background-repeat: no-repeat;
-  	background-attachment: fixed;
-  	background-position: center;
-  	font-family: Girassol;
-  	background-size: cover;
-  	margin-top: 1vw;
+body
+{
+    font-family: Girassol;
+
+    margin-top: .8vw;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
-#X, #O {
-	padding:10px 10px; 
+#X,
+#O
+{
+    display: inline-flex;
+
+    padding: 10px 10px;
+
+    border-radius: 45%;
+    background-color: #c1a594;
 }
 
-.container {
-	display: grid;
-	grid-gap: 10px;
-	grid-template-columns: 100px 100px 100px;
-	margin-left: 10vw;
-	margin-top: 50px;
+.container
+{
+    display: grid;
+
+    margin-top: 3vw;
+
+    grid-gap: 10px;
+    grid-template-columns: 101px 101px 101px;
+    grid-template-rows: 60px 60px 60px;
+    justify-self: center;
+    justify-content: center;
 }
 
-#res, #resBoard, #Scrdp {
-	display: block;
-	float: right;
-	padding: 10px 20px;
-	margin-top: 20px;
-	margin-left: 10px;
-	margin-right: 10px;
+#resBoard,
+#Scrdp
+{
+    display: flex;
+    float: right;
+
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px 20px;
+
+    border-radius: 10px;
+    background-color: #c1a594;
+
+    flex-wrap: wrap;
 }
 
-button[id^="item"] {
-  background-color: rgb(174, 53, 47);
-  border: none;
-  color: white;
-  padding: 20px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 15px;
+button[id^='item']
+{
+    font-size: 15px;
 
-}
+    padding: 20px 32px;
 
-#Score {
-	display: none;
-	margin-top: 100px;
-	margin-left: 10vw;
-	font-size: 3vw;
-	background-color: rgb(174, 53, 47);
-	width: 320px;
-	color: White;
-	text-align: center;
-	padding-top: 10px;
-	padding-bottom: 2px;
-}
+    text-align: center;
+    text-decoration: none;
 
-h3 {
-	font-size: 25px;
-	width: 180px;
-}
-
-h3:hover , h1:hover{
-	text-shadow: 2px 2px 5px  rgb(174, 53, 47);
-}
-
-button:hover {
-	position:relative;
-    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     color: white;
-    background-color: rgb(174, 53, 47);
+    border: none;
+    background-color: rgb(196, 53, 53);
 }
 
-#scrReset {
-	display: block;
-	float: right;
-	margin-right: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+#Score
+{
+    font-size: 25px;
+
+    display: none;
+
+    width: 340px;
+    margin-top: 3vw;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10px;
+    padding-bottom: 2px;
+
+    text-align: center;
+
+    color: White;
+    border-radius: 30px;
+    background-color: rgb(196, 53, 53);
 }
 
-h1{
-	font-size: 60px;
-	text-decoration: underline;
-	width: 300px;
+h3
+{
+    font-size: 25px;
+
+    width: 180px;
+
+    color: #49dd7c;
 }
 
+h3:hover,
+h1:hover
+{
+    text-shadow: 4px 4px 10px rgb(174, 53, 47);
+}
+
+button[id^='item']:hover
+{
+    position: relative;
+
+    color: rgb(174, 53, 47);
+    background-color: white;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .3), 0 0 40px rgba(0, 0, 0, .1) inset;
+       -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, .3), 0 0 40px rgba(0, 0, 0, .1) inset;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, .3), 0 0 40px rgba(0, 0, 0, .1) inset;
+}
+
+button:hover
+{
+    position: relative;
+
+    color: white;
+}
+
+h1
+{
+    font-size: 60px;
+
+    width: 300px;
+
+    text-decoration: underline;
+
+    color: #49dd7c;
+}
+
+#res,
+#scrReset
+{
+    display: flex;
+    float: left;
+
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px 20px;
+
+    border-radius: 10px;
+    background-color: #c1a594;
+
+    flex-wrap: wrap;
+}
+
+button:hover
+{
+    position: relative;
+
+    color: white;
+    box-shadow: 0 1px 4px white;
+}
+
+@media screen and (max-height:640px)
+{
+    h3
+    {
+        font-size: 40px;
+
+        width: 300px;
+
+        text-decoration: underline;
+    }
+    h1
+    {
+        display: none;
+    }
+}

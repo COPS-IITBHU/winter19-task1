@@ -71,6 +71,7 @@ let player1 = prompt('Player1 enter your Name please','Player1');
 let player2 = prompt('Player2 enter your Name please','Player2');
 
 while(player1 == null || player2 == null){
+	window.navigator.vibrate(100);
 	player1 = prompt('Player1 enter your Name please','Player1');
 	player2 = prompt('Player2 enter your Name please','Player2');
 }
@@ -88,8 +89,9 @@ function start(element,count){
 }
 
 function add_dp(element){
-	
+
 	if(counter == -1){
+		window.navigator.vibrate(200);
 		alert(`${player1} select X or O`)
 		return;
 	}
@@ -114,6 +116,7 @@ function add_dp(element){
 		if(getResult(board)!= undefined){
 			getResult(board) == Play1 ? num1++ : num2++;
 
+			window.navigator.vibrate(200);
 			document.getElementById("Score").style.display = "block";
 			document.getElementById("Score").innerHTML = (getResult(board) == Play1 ? `${player1} wins`: `${player2} wins`);
 			document.querySelectorAll('.input').forEach(elem => {
@@ -121,12 +124,12 @@ function add_dp(element){
 			});
 		}
 	}
-	
+
 	if(counter == max){
 		document.getElementById("Score").style.display = "block";
-		document.getElementById("Score").innerHTML = 'Tie Game';
+		document.getElementById("Score").innerHTML = 'I see this as an Absolute Win!';
 	}
-	
+
 }
 
 function resetBoardDp(){
