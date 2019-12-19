@@ -156,7 +156,7 @@ function singlePlayerMode(pos /*pos from 1-9*/) {
     displayWinner("-");
     return;
   }
-  function myRecursive(board, player) {
+  function myRecursive(board, currPlayer) {
     var emptyPositionsArr = emptyIndices(board); // Array of Empty Positions
     if (checkIfWinning(board, choice[0])) {
       // Check whether the User is Winning
@@ -172,8 +172,8 @@ function singlePlayerMode(pos /*pos from 1-9*/) {
     for (var i = 0; i < emptyPositionsArr.length; i++) {
       var currentMove = {}; // Object which will contain points and position of each move
       currentMove.position = board[emptyPositionsArr[i]]; // Sets the currentMove to each empty position iteratively
-      board[emptyPositionsArr[i]] = player; // Sets the empty position to the player with the next turn
-      if (player == choice[1]) {
+      board[emptyPositionsArr[i]] = currPlayer; // Sets the empty position to the player with the next turn
+      if (currPlayer == choice[1]) {
         // Calls the function recursively with the players switched for the next move
         var result = myRecursive(board, choice[0]);
         currentMove.points = result.points; // Records the points for the current move
@@ -187,7 +187,7 @@ function singlePlayerMode(pos /*pos from 1-9*/) {
     } // end of for
     shuffle(arrayOfAllMoves); //Randomize all the elements of the array so that the initial moves are not unduly favoured
     var counter; // To find the position of the best move in the array
-    if (player == choice[1]) {
+    if (currPlayer == choice[1]) {
       // This part is only evaluated for the Computer's move as we want the best possible move
       highestPoints = -6942; // A random number :p
       for (let i = 0; i < arrayOfAllMoves.length; i++) {
