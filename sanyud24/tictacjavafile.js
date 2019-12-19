@@ -155,50 +155,50 @@ function sanyu(id)
 	var c9=document.getElementById("nine").value;
 	if (c1=="x" && c2=="x" && c3=="x")
 	{
-       alert("x wins");
+       alert("X wins");
 	}if (c1=="x" && c7=="x" && c4=="x")
 	{
-       alert("x wins");
+       alert("X wins");
 	}if (c7=="x" && c8=="x" && c9=="x")
 	{
-       alert("x wins");
+       alert("X wins");
 	}if (c4=="x" && c5=="x" && c6=="x")
 	{
-       alert("x wins");
+       alert("X wins");
 	}if (c2=="x" && c8=="x" && c5=="x")
 	{
-       alert("x wins");
+       alert("X wins");
 	}if (c3=="x" && c9=="x" && c6=="x")
 	{
-       alert("x wins");
+       alert("X wins");
 	}if (c1=="x" && c8=="x" && c6=="x")
 	{
-       alert("x wins");
+       alert("X wins");
 	}if (c3=="x" && c8=="x" && c4=="x")
 	{
-       alert("x wins");
+       alert("X wins");
 	}
        if (c1=="O" && c2=="O" && c3=="O")
 	{
-       alert("x wins");
+       alert("O wins");
 	}if (c1=="O" && c7=="O" && c4=="O")
 	{
-       alert("x wins");
+       alert("O wins");
 	}if (c7=="O" && c8=="O" && c9=="O")
 	{
-       alert("x wins");
+       alert("O wins");
 	}if (c4=="O" && c5=="O" && c6=="O")
 	{
-       alert("x wins");
+       alert("O wins");
 	}if (c2=="O" && c8=="O" && c5=="O")
 	{
-       alert("x wins");
+       alert("O wins");
 	}if (c3=="O" && c9=="O" && c6=="O")
 	{
-       alert("x wins");
+       alert("O wins");
 	}if (c1=="O" && c8=="O" && c6=="O")
 	{
-       alert("x wins");
+       alert("O wins");
 	}if (c3=="O" && c8=="O" && c4=="O")
 	{
        alert("O wins");
