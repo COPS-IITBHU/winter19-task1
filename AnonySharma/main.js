@@ -18,7 +18,7 @@ const winStates = [
 ]
 
 document.addEventListener('keyup', event => {
-    if (event.code === 'Space') {
+    if (event.code === 'Escape') {
         restartGame();
     }
 })
