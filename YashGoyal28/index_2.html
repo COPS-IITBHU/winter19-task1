@@ -1,0 +1,50 @@
+<!--HTML-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF=8">
+        <meta name="description" content="Awesome Tic Tac Toe game">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Modak&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Permanent+Marker&display=swap" rel="stylesheet">    
+        <script src="main.js"></script>
+        <title>Tic Tac Toe</title>
+    </head>
+    <body>
+        <header>
+            <div> 
+                <h1 style="font-size:70px; color: red; text-align:center;">Tic Tac Toe</h1> 
+            </div>
+        </header>
+        
+        <main>
+            <form action="game.html">
+                <div class="game-board">
+                    <div class="title">
+                        2 Player Mode
+                    </div>
+                    <div class="player">
+                        <u><b>Player - 1</u> &nbsp;&nbsp;-></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="first-turn" value="1" checked>1st Turn<br/>
+                        Name :
+                        <input class="playername" name="player1name" type="text" value="Player 1" placeholder="Player 1" autocomplete="off"/><br/>
+                        Player 1's marker :
+                        <input type="radio" name="marker-O" value="O" checked onclick="playermarker(this);">O
+                        <input type="radio" name="marker-X" value="X"  onclick="playermarker(this);">X<br/>
+                        <u><b>Player - 2</u> &nbsp;&nbsp;-></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="first-turn" value="2">1st Turn<br/>
+                        Name :
+                        <input class="playername" name="player2name" type="text" value="Player 2" placeholder="Player 2" autocomplete="off"/><br/>
+                        Player 2's marker :
+                        <input type="radio" name="marker-O" value="O" onclick="playermarker(this);">O
+                        <input type="radio" name="marker-X" value="X" checked onclick="playermarker(this);">X</br>
+                    </div>
+                    <div>
+                        <input type="submit" value="Let's GO">
+                    </div>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>

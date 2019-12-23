@@ -1,0 +1,49 @@
+<!--HTML-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF=8">
+        <meta name="description" content="Awesome Tic Tac Toe game">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Modak&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Permanent+Marker&display=swap" rel="stylesheet"> 
+        <script src="main.js"></script>
+        <script>twoplayermode();</script>
+		<title>Tic-Tac-Toe Game</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <a href="index.html">
+                <h1 id="heading" style="font-size:70px; color: red; text-align:center;">Tic Tac Toe</h1>
+                </a>
+            </div>
+        </header>
+        <main>
+            <div class="game-board">
+                <div id="row-1">
+                    <div onclick="move(this);" id="1"></div>
+                    <div onclick="move(this);" id="2"></div>
+                    <div onclick="move(this);" id="3"></div>
+                </div>
+                <div id="row-2">
+                    <div onclick="move(this);" id="4"></div>
+                    <div onclick="move(this);" id="5"></div>
+                    <div onclick="move(this);" id="6"></div>
+                </div>
+                <div id="row-3">         
+                    <div onclick="move(this);" id="7"></div>
+                    <div onclick="move(this);" id="8"></div>
+                    <div onclick="move(this);" id="9"></div>
+                </div>
+            </div>
+            <div>
+                <button class="button" type="button" onclick="reload();">Play Again</button>
+                <text>&nbsp;&nbsp;&nbsp;&nbsp;</text>
+                <text class="currentgame" id="playerturn"><script>firstturn();</script></text>
+                <button class="button" type="button" id="bestmove" onclick="tellbestmove();">Get Best Move</button>
+            </div>
+        </main>
+    </body>
+</html>
