@@ -1,0 +1,39 @@
+h1{
+	font-size: 60px;
+	text-decoration: underline;
+	width: 300px;
+}
+h3 {
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 50px;
+	width: 350px;
+}
+
+h3:hover , h1:hover{
+	text-shadow: 2px 2px 5px  rgb(174, 53, 47);
+}
+
+#dpb , #spb{
+	display: block;
+	margin: 20px auto;
+	background-color: rgb(174, 53, 47);
+  	color: white;
+  	padding: 15px 32px;
+  	text-align: center;
+  	font-size: 20px;
+  	font-family : Girassol;
+}
+
+#start {
+	margin: 50px auto;
+}
+
+body {
+		background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-position: center;
+  	font-family: Girassol;
+  	background-size: cover;
+  	margin-top: 25px;
+}

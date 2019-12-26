@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="styles/style1.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Girassol&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="images/icon.png" />
+	<title>User v/s AI</title>
+
+</head>
+
+<body background="images/background2.jpg">
+	<center>
+		<h1> Tic Tac Toe </h1>
+		<h3> Single Player Mode </h3>
+	</center>
+
+	<div id="dp">
+		<center id="top">
+			<button id="X" onclick="start(this)">Turn X</button>
+			<button id="O" onclick="start(this);">Turn O</button>
+		</center>
+		<div class="container">
+			<button class="input" id="0" onclick="userPlay(this)"> </button>
+			<button class="input" id="1" onclick="userPlay(this)"> </button>
+			<button class="input" id="2" onclick="userPlay(this)"> </button>
+			<button class="input" id="3" onclick="userPlay(this)"> </button>
+			<button class="input" id="4" onclick="userPlay(this)"> </button>
+			<button class="input" id="5" onclick="userPlay(this)"> </button>
+			<button class="input" id="6" onclick="userPlay(this)"> </button>
+			<button class="input" id="7" onclick="userPlay(this)"> </button>
+			<button class="input" id="8" onclick="userPlay(this)"> </button>
+		</div>
+		<div id="Score"></div>
+		<button onclick="resetBoard()" id="resBoard"> Reset Board </button>
+	</div>
+
+	<button onclick="location.href='index.html'" id="res">Reset Mode</button>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+	<script src="scripts/script1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+body
+{
+    font-family: Girassol;
+
+    margin-top: .8vw;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#X,
+#O
+{
+    display: inline-flex;
+
+    padding: 10px 10px;
+
+    border-radius: 45%;
+    background-color: #c1a594;
+}
+
+.container
+{
+    display: grid;
+
+    margin-top: 3vw;
+
+    grid-gap: 10px;
+    grid-template-columns: 101px 101px 101px;
+    grid-template-rows: 60px 60px 60px;
+    justify-self: center;
+    justify-content: center;
+}
+
+#resBoard,
+#Scrdp
+{
+    display: flex;
+    float: right;
+
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px 20px;
+
+    border-radius: 10px;
+    background-color: #c1a594;
+
+    flex-wrap: wrap;
+}
+
+button[id^='item']
+{
+    font-size: 15px;
+
+    padding: 20px 32px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: white;
+    border: none;
+    background-color: rgb(196, 53, 53);
+}
+
+#Score
+{
+    font-size: 25px;
+
+    display: none;
+
+    width: 340px;
+    margin-top: 3vw;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10px;
+    padding-bottom: 2px;
+
+    text-align: center;
+
+    color: White;
+    border-radius: 30px;
+    background-color: rgb(196, 53, 53);
+}
+
+h3
+{
+    font-size: 25px;
+
+    width: 180px;
+
+    color: #49dd7c;
+}
+
+h3:hover,
+h1:hover
+{
+    text-shadow: 4px 4px 10px rgb(174, 53, 47);
+}
+
+button[id^='item']:hover
+{
+    position: relative;
+
+    color: rgb(174, 53, 47);
+    background-color: white;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .3), 0 0 40px rgba(0, 0, 0, .1) inset;
+       -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, .3), 0 0 40px rgba(0, 0, 0, .1) inset;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, .3), 0 0 40px rgba(0, 0, 0, .1) inset;
+}
+
+button:hover
+{
+    position: relative;
+
+    color: white;
+}
+
+h1
+{
+    font-size: 60px;
+
+    width: 300px;
+
+    text-decoration: underline;
+
+    color: #49dd7c;
+}
+
+#res,
+#scrReset
+{
+    display: flex;
+    float: left;
+
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px 20px;
+
+    border-radius: 10px;
+    background-color: #c1a594;
+
+    flex-wrap: wrap;
+}
+
+button:hover
+{
+    position: relative;
+
+    color: white;
+    box-shadow: 0 1px 4px white;
+}
+
+@media screen and (max-height:640px)
+{
+    h3
+    {
+        font-size: 40px;
+
+        width: 300px;
+
+        text-decoration: underline;
+    }
+    h1
+    {
+        display: none;
+    }
+}
