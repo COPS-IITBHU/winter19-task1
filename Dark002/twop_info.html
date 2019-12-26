@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF=8">
+    <meta name="description" content="Tic Tac Toe game">
+    <title>Tic Tac Toe </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href="https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <h1 style="font-size:70px;color:orangered;text-align:center;">Tic Tac Toe: Two Player Mode</h1> 
+    <form action="twop_game.html">
+    <div class="tttboard">
+    <div class="player">
+    <u><b>Player - 1</b></u><br/>
+    <input type="radio" name="first-turn" value="1" checked>1st Turn
+    <br/><input type="radio" name="first-turn" value="2">2nd Turn<br/>
+    Name :
+    <input type="text" class="playername" /><br/>
+    Player 1's marker :
+    <input type="radio" name="marker-O" value="O" checked onclick="playermarker(this);">O
+    <input type="radio" name="marker-X" value="X"  onclick="playermarker(this);">X<br/>
+    <u><b>Player - 2</b></u><br/>
+    
+    Name :
+    <input type="text" class="playername"/><br/>
+    Player 2's marker :
+    <input type="radio" name="marker-O" value="O" onclick="playermarker(this);">O
+    <input type="radio" name="marker-X" value="X" checked onclick="playermarker(this);">X</br>
+    </div>
+    <div><br/>
+    <input type="submit" value="continue">
+    </div>
+    </div>
+    </form>
+  </body>
+</html>
