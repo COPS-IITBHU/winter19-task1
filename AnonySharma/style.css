@@ -1,0 +1,432 @@
+body {
+  background-color: #FFFF32;
+  overflow: hidden;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: auto;
+  width: 100%;
+  display: table;
+}
+
+.sideBar {
+  position: absolute;
+  float: left;
+  background-color: #130a33;
+  padding: 0;
+  height: 100%;
+  width: 25%;
+  display: table-cell;
+}
+
+.replayButton {
+  width: 80px;
+  height: 40px;
+  position: relative;
+  display: none;
+  left: 40%;
+  font-size: 1.2em;
+  font-family: Product Sans;
+  border: none;
+  background-color: #FFFF32;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+.main {
+  display: table-cell;
+  width: 75%;
+  padding-left: 20%;
+}
+
+.gameBoard {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  float: right;
+  height: 100%;
+  width: 75%;
+}
+
+.text1 {
+  bottom: 0;
+  right: 0;
+  font-size: 0.8em;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  margin: 0;
+  position: absolute;
+}
+
+td {
+  border: 10px solid #333;
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  font-size: 100px;
+}
+
+table {
+  font-family: Product Sans;
+  display: none;
+  text-shadow: 2px 2px 4px #000000;
+  border-collapse: collapse;
+  position: relative;
+  top: 20%;
+}
+
+tr:first-child td {
+  border-top: 0;
+}
+
+tr:last-child td {
+  border-bottom: 0;
+}
+
+tr td:first-child {
+  border-left: 0;
+}
+
+tr td:last-child {
+  border-right: 0;
+}
+
+.winner {
+  display: none;
+  width: 200px;
+  background-color: rgba(000,000,000,0.9);
+  position: absolute;
+  left: 20.5%;
+  top: 42%;
+  margin-left: -100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-size: 2em;
+}
+
+.newGameButton {
+  width: 200px;
+  height: 60px;
+  position: absolute;
+  top: 46%;
+  left: 54%;
+  font-size: 2em;
+  font-family: Product Sans;
+  color: #fff;
+  border: none;
+  background-color: #000000;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.newGameButton:hover {
+  background-color: #000064;
+  text-shadow: 0 0 1px #03EFFE;
+}
+
+.chooseXO {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  right: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,1);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.titleText {
+  height: 10%;
+  left: 48%;
+  position: absolute;
+  font-size: 4em;
+  font-family: Arial;
+  color: #111111;
+}
+
+.overlayContent {
+  display: table;
+  position: relative;
+  margin: 20px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #111111;
+  margin-top: 180px;
+  margin-left: 350px;
+}
+
+#Xbut {
+  margin-right: 20px;
+}
+
+.XObutton {
+  position: relative;
+  color: #000;
+  height: 80px;
+  width: 80px;
+  font-family: Product Sans;
+  text-align: center;
+  border: none;
+  left: 100px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+/*
+.overlayContent button:hover , .overlayContent button:focus {
+  background-color: #830a33;
+  text-shadow: 0 0 2px yellow;
+}*/
+
+.XOhover:hover {
+  background-color: #830a33;
+  text-shadow: 0 0 2px yellow;
+}
+
+/*
+.XOclicked:active {
+  background-color: #b30a33;
+  text-shadow: 0 0 5px yellow;	
+}*/
+
+.Xbut {
+  display: table-column;
+  background-color: #333332;
+  margin-right: 20px;
+}
+
+.Obut {
+  display: table-column;
+  background-color: #333332;
+}
+
+.overlayContent .XObutton, .overlayContent .XObutton {
+  position: relative;
+  padding: 0px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.symbolH1 {
+  color: #fff;
+  font-family: Product Sans;
+  font-size: 2em;
+}
+
+.submit {
+  width: 120px;
+  height: 40px;
+  position: relative;
+  left: 140px;
+  color: #130A33;
+  font-family: Product Sans;
+  border: none;
+  font-size: 1.5em;
+  background-color: #FFFF32;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #FFFF10;
+  text-shadow: 0 0 1px black;
+}
+
+.p1NameText {
+  width: 60%;
+  padding: 9px 20px;
+  margin: 8px 0;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 4px solid #FFFF32;
+  text-decoration: none;
+  font-family: Product Sans;
+  font-size: 1.5em;
+  margin-left: 60px;
+}
+
+/*---------------------------*/
+
+.VSchoose {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  right: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,1);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.VSContent {
+  display: table;
+  position: relative;
+  margin: 20px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  background-color: #111111;
+  margin-top: 200px;
+  margin-left: 390px;
+}
+
+#PLbut {
+  margin-right: 20px;
+}
+
+.VSbutton {
+  position: relative;
+  color: #000;
+  height: 80px;
+  width: 80px;
+  font-family: Product Sans;
+  text-align: center;
+  border: none;
+  left: 60px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+/*
+.overlayContent button:hover , .overlayContent button:focus {
+  background-color: #830a33;
+  text-shadow: 0 0 2px yellow;
+}*/
+
+.VShover:hover {
+  background-color: #830a33;
+  text-shadow: 0 0 2px yellow;
+}
+
+/*
+.XOclicked:active {
+  background-color: #b30a33;
+  text-shadow: 0 0 5px yellow;	
+}*/
+
+.PLbut {
+  display: table-column;
+  background-color: #333332;
+  margin-right: 20px;
+}
+
+.AIbut {
+  display: table-column;
+  background-color: #333332;
+}
+
+.VSContent .VSbutton, .VSContent .VSbutton {
+  position: relative;
+  padding: 0px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.symbolVS {
+  color: #fff;
+  font-family: Product Sans;
+  font-size: 2em;
+}
+
+.symbolVSH1 {
+  color: #fff;
+  font-family: Product Sans;
+  display: none;
+  font-size: 2em;
+}
+
+.start {
+  width: 120px;
+  height: 40px;
+  position: relative;
+  left: 92px;
+  color: #130A33;
+  font-family: Product Sans;
+  border: none;
+  font-size: 1.5em;
+  background-color: #FFFF32;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+.start:hover {
+  background-color: #FFFF10;
+  text-shadow: 0 0 1px black;
+}
+
+.p2NameText {
+  display: none;
+  width: 60%;
+  padding: 9px 20px;
+  margin: 8px 0;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 4px solid #FFFF32;
+  text-decoration: none;
+  font-family: Product Sans;
+  font-size: 1.5em;
+  margin-left: 25px;
+}
+
+/*--------------------------*/
+
+.darkMode {
+  top: 0;
+  right: 0;
+  z-index: 10;
+  padding-right: 15px;
+  padding-top: 52px;
+  margin: 0;
+  position: absolute;
+}
+
+.dark {
+	height: 50px;
+}
+
+.dark:hover, .dark:focus {
+	height: 51px;
+	transition: 0.5s;
+}
+
+.gotoButton {
+  width: 80px;
+  height: 40px;
+  position: relative;
+  display: none;
+  left: 40%;
+  font-size: 1.2em;
+  font-family: Product Sans;
+  border: none;
+  background-color: #FFFF32;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+.gotoButton:hover, .replayButton:hover, {
+	text-shadow: 0 0 1px black;
+}
