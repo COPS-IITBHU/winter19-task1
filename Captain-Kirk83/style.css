@@ -1,0 +1,70 @@
+#header{
+    background-color: cornflowerblue;
+    color: wheat;
+    text-align: center;
+}
+body{
+    background-color: grey;
+    user-select: none;
+}
+#container{
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content{
+    background-color: turquoise;
+    height: 312px;
+    width: 312px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#a1,#a2,#a3{
+    width: 100px;
+    height: 100px;
+    border: 2px solid tomato;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: none;
+}
+#a4,#a5,#a6{
+    width: 100px;
+    height: 100px;
+    border: 2px solid tomato;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+#a7,#a8,#a9{
+    width: 100px;
+    height: 100px;
+    border: 2px solid tomato;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: none;
+}
+#a1,#a4,#a7{
+    border-left: none;
+}
+#a3,#a6,#a9{
+    border-right: none;
+}
+span{
+    font-size: 100px;
+    padding-left: 15px;
+    padding-bottom: 30px;
+
+}
+#footer{
+    text-align: center;
+    font-size: 25px;
+}
+#button{
+    text-align: center;
+    font-size: xx-large;   
+}
