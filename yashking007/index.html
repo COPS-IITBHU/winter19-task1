@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TIC TAC TOE!</title>
+        <meta charset="utf-8" />
+		<meta name='author' content='Yash Garg' />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            Tic Tac Toe!
+        </div>
+        <div>
+            <div id="play-area">
+                <div id="container">
+                    <div id="box0" class="box-element" onclick="playmove(0)"></div>
+                    <div id="box1" class="box-element" onclick="playmove(1)"></div>
+                    <div id="box2" class="box-element" onclick="playmove(2)"></div>
+                
+                    <div id="box3" class="box-element" onclick="playmove(3)"></div>
+                    <div id="box4" class="box-element" onclick="playmove(4)"></div>
+                    <div id="box5" class="box-element" onclick="playmove(5)"></div>
+                
+                    <div id="box6" class="box-element" onclick="playmove(6)"></div>
+                    <div id="box7" class="box-element" onclick="playmove(7)"></div>
+                    <div id="box8" class="box-element" onclick="playmove(8)"></div>
+                </div>
+                <div id="result" style="visibility:hidden;">
+                    <div id="message"></div>
+                    <button onclick="location.reload()">Change Game Mode</button>
+                    <button onclick="begin(mode)">New Game </button>
+                </div>
+            </div>
+            <div id="modeselector">
+                <h2 id="selectorhead">Choose Mode</h2>
+                <div id="leftcarrier" class="carrier">
+                    <div id="twoplayer" class="selector">
+                        <img src="images/logo_2player.png" /><br />
+                        <span class="input-container">Player 1(moves first):<input id="player1" type="text" class="pname" placeholder="Name" /><br />
+                            <span id="t1" class="token-selector dot" onclick="select(1)" style="box-shadow:cyan 0px 0px 3px;"></span>
+                            <span id="t2" class="token-selector cross" onclick="select(2)" style="box-shadow:#555555 0px 0px 3px;"></span>
+                        </span>
+                        <span class="input-container">Player 2:<input id="player2" type="text" class="pname" placeholder="Name" /><br />
+                            <span id="t3" class="token-selector dot" onclick="select(3)" style="box-shadow:#555555 0px 0px 3px;"></span>
+                            <span id="t4" class="token-selector cross"  onclick="select(4)" style="box-shadow:cyan 0px 0px 3px;"></span>
+                        </span>
+                        <button id="submit1" onclick="begin(0)" >Start</button>
+                    </div>
+                </div>
+                <div id="rightcarrier" class="carrier">
+                    <div id="oneplayer" class="selector">
+                        <img src="images/logo_computer.png" /><br />
+                        <span class="input-container">Player:<input id="player" type="text" class="pname" placeholder="Name" /><br />
+                            <span  id="t5" class="token-selector dot"  onclick="select(5)" style="box-shadow:cyan 0px 0px 3px;"></span>
+                            <span id="t6" class="token-selector cross"  onclick="select(6)" style="box-shadow:#555555 0px 0px 3px;"></span>
+                        </span>
+                        Computer Moves First:<input id="compfirst" type="checkbox" checked/><br />
+                        <button id="submit2" onclick="begin(1)" style="margin-top:10px;">Start</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="git-hub"><a href="https://github.com/yashking007/"><img src="images/github.png" /></a></div>
+    </body>
+</html>

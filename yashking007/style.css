@@ -1,0 +1,142 @@
+body {
+    margin:0;
+    background-image:url(images/bluebg.jpg);
+}
+
+div#header {
+    font-family: Papyrus, fantasy;
+    background-image: linear-gradient(#607de2,#4c64b4);
+    color: whitesmoke;
+    font-size: 10vh;
+    text-align: center;
+    padding-top: 2vh;
+    width: 100%;
+    text-shadow: -2px 0px black,0px 2px black,0px -2px black,2px 0px black;
+}
+
+div#play-area{
+    height :80%;
+    padding-top:20px;
+    position:absolute;
+    width:100%;
+    visibility:hidden;
+}
+
+div#container{
+    background-color:rgba(187,187,187,0.5);
+    margin-left:35vw;
+    width:30vw;
+    height:30vw;
+    box-shadow:0px 2px 10px black;
+}
+
+div.box-element{
+    text-align:center;
+    font-size:2em;
+    height:10vw;
+    width:10vw;
+    box-sizing:border-box;
+    float:left;
+    border:2px solid rgba(0,0,0,0.2);
+    background-size:10vw;
+}
+
+div#modeselector {
+    position: absolute;
+    height: 75%;
+    width: 100%;
+    padding-top: 10px;
+    text-align:center;
+}
+
+div#modeselector h2{
+    font-size:200%;
+    text-align:center;
+    font-family:'Lucida Sans', sans-serif;
+}
+
+div.carrier{
+    float:left;
+    width:50%;
+    text-align:center;
+    box-sizing:border-box;
+}
+div#leftcarrier{
+    padding-left:21%;
+}
+div#rightcarrier{
+    padding-left:10.5%;
+}
+div.selector{
+    padding-top:10px;
+    height:30vw;
+    width:18.54vw;
+    background-color:#fff;
+    border-radius:20px;
+    box-sizing:border-box;
+    box-shadow:0px 0px 2px blue;
+    text-align:center;
+}
+div.selector:hover{
+    box-shadow:0px 0px 5px blue;
+}
+div.selector img{
+    width:17vw;
+    height:auto;
+}
+input.pname{
+    font-family:sans-serif;
+    border:3px solid #bbbbbb;
+    color:black;
+    top:100px;
+    width:inherit;
+    display:block;
+    margin:0px auto;
+}
+input.pname:focus{
+    color:azure;
+    background-color:#555555;
+}
+span.input-container{
+    font-family:sans-serif;
+    font-weight:bold;
+    padding-top:10px;
+    padding-bottom:10px;
+    display:block;
+    width:auto;
+    margin-bottom:10px;
+}
+span.token-selector{
+    display:inline-block;
+    height:30px;
+    width:30px;
+    border-radius:5px;
+}
+
+span.dot{
+    background:url(images/selector_cross.png) no-repeat;
+    background-position:center;
+}
+span.cross {
+    background: url(images/selector_dot.png) no-repeat;
+    filter:hue-rotate(20deg);
+    background-position: center;
+}
+
+div#result{
+    margin-top:10px;
+    font-family:'Lucida Sans,san-serif';
+    background-color:transparent;
+    color:black;
+    text-align:center;
+    font-size:2em;
+}
+div#git-hub{
+    position:fixed;
+    height:32px;
+    width:40px;
+    text-align:center;
+    bottom:20px;
+    right:0;
+    cursor:pointer;
+}
