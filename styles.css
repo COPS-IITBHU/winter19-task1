@@ -1,0 +1,117 @@
+body{
+  text-align: center;
+}
+
+
+.topPortion{
+  background-color: #ffffff;
+  height: 150px;
+}
+
+.midlePortion{
+  background-color: #14bdac;
+  height: 275px;
+}
+.botomPortion{
+  background-color: #ffffff ;
+  height: 150px;
+
+  }
+  .playOption{
+    text-align: left;
+    position: absolute;
+    left: 15px;
+    width: 100px;
+    height: 35px;
+    border-radius: 8%;
+    background-color: #ffffff;
+  }
+  .hrLine{
+    width: auto;
+    border-color: #393e46;
+  }
+
+.X{
+  height: 40PX;
+  width: 140PX;
+  border-radius: 12%;
+  position: absolute;
+  top: 60px;
+  left: 400px;
+  background-color: #ffffff;
+}
+.O{
+  height: 40PX;
+  width: 140PX;
+  border-radius: 12%;
+  position: absolute;
+  top: 60px;
+  right: 400px;
+  background-color: #ffffff;
+}
+.tictactoe{
+  position: relative;
+  top: 70px;
+
+}
+.dropdown{
+  text-align: left;
+  position: relative;
+  top: 40px;
+  background-color: grey;
+  width: 150px;
+  border-radius: 5%;
+}
+.playWithComputer{
+  color: #40514e;
+  height: 30px;
+  width: 150px;
+  background-color: grey;
+  border-radius: 4%;
+  display: block;
+  text-align: center;
+}
+.playWithComputer:hover{ background-color:#14bdac  ;}
+.platWithOpponent{
+  color: #40514e;
+  height: 30px;
+  width: 150px;
+  background-color: grey;
+  border-radius: 4%;
+  display: block;
+  text-align: center;
+}
+
+.platWithOpponent:hover{background-color: #14bdac;}
+.design{
+  background-color: #14bdac ;
+
+  }
+  .xo{
+    position: absolute;
+    top: 80px;
+    left: 500px;
+    color:  #14bdac ;
+    font-size: 22px;
+}
+.btn{
+  height: 40px;
+  width: 40px;
+  border-style: none solid solid none;
+  background-color: #14bdac;
+  border-color: #29a19c;
+  border-collapse: collapse;
+  border-spacing: 0 0;
+  margin: 0;
+  box-sizing: border-box;
+  vertical-align: text-top;
+}
+
+.restartbtn{
+  height: 60px;
+  width: 1240px;
+  background-color: #ffffff;
+  color: #14bdac;
+  font-weight: bold;
+  font-size: 20px;
+}
