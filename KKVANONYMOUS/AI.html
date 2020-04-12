@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Computer</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link rel="stylesheet" type="text/css" href="AIstyle.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@600&family=Inria+Sans:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+<script src="AI.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="playArea">
+			<div class="board">
+				<div class="flex">
+					<div class="box" id="0" onclick="addSymbol(this)"></div>
+					<div class="box" id="1" onclick="addSymbol(this)"></div>
+					<div class="box" id="2" onclick="addSymbol(this)"></div>
+				</div>
+				<div class="flex">
+					<div class="box" id="3" onclick="addSymbol(this)"></div>
+					<div class="box" id="4" onclick="addSymbol(this)"></div>
+					<div class="box" id="5" onclick="addSymbol(this)"></div>
+				</div>		
+				<div class="flex">
+					<div class="box" id="6" onclick="addSymbol(this)"></div>
+					<div class="box" id="7" onclick="addSymbol(this)"></div>
+					<div class="box" id="8" onclick="addSymbol(this)"></div>
+				</div>
+			</div>
+				
+			</div>
+			<div class="scoreNbtn">
+				
+				<div class="btnClass text-center">
+				<div class="btn">
+				<button class="btn btn-outline-warning" onclick="resetBoard()">Reset Board</button><br><br>
+				<a href="index.html"><button class="btn btn-outline-success">Reset Mode</button></a>
+				</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<!-- input modal
+ --><div class="modal fade" id="playerInfo" data-backdrop="static" data-keyboard="false">
+   <div class="modal-dialog modal-dialog-centered">
+     <div class="modal-content">
+       <div class="modal-header bg-warning">
+       </div>
+       <div class="modal-body bg-green">
+         <form>
+           <div class="form-group">
+             <label><img src="images/user2.png" width="30">Player :</label>
+             <input type="text" class="form-control" id="player" placeholder="Player">
+           </div>
+           <div class="form-group">
+             <label>Player choose: <input type="radio" name="symbol" value="X" checked="true"><img src="images/close.png" width="30"></label>
+            <label><input type="radio"  name="symbol" value="O" ><img src="images/circle.png" width="30"></label>
+           </div>
+         </form>
+         <div class="modal-footer justify-content-center">
+           <button class="btn btn-outline-info" data-dismiss="modal" onclick="inputNstore()">Start
+           </button><p>#Computer will go first</p>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+<div class="modal fade" id="resultDisplayer">
+   <div class="modal-dialog modal-dialog-centered">
+     <div class="modal-content">
+       <div class="modal-body text-center" id="matchResult">
+         
+         </div>
+       </div>
+     </div>
+   </div>
+ <!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

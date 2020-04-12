@@ -1,100 +1,144 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/b7.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#tictactoe{
+  opacity: 0.6;
+  height: 135px;
+  width: 150px;
+}
+/* #ff0057
+ */.heading{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: 'Varela Round', sans-serif;
+  border: 3px solid #C5C1AC;
+  border-radius: 20px;
+  width: 250px;
+  height: 200px;
+}
+.heading:hover{
+  background-color: #627AE1;
+  opacity: 0.7;
+}
+.heading:hover h1{
+  color: #000;
+}
+.heading:hover #tictactoe{
+  opacity: 1;
+}
+.row{
+      margin-top: 33px;
+       display: flex;
+  justify-content: center;
+  align-items: center;
+    }
+    .mode{
+      margin-bottom: 40px;
+      padding: 2px;
+      padding-bottom: 3px;
+      width:200px;
+ }
+ ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ li{
+  margin-right: 30px;
+ }
+ 
+ .mode .top_part{
+  opacity: 0.5;
+  max-width: 200px;
+  transition: 1s;
+  transform: translateY(60px);
+  border: 1px solid black;
+  border-radius: 10px ;
+  border-width: 0;
+  background-color: #DEE3D7;
+ }
+ .mode .bottom_part{
+  opacity: 0;
+ max-width: 200px;
+ transition: 1s;
+ transform: translateY(-100px);
+ border: 1px solid black;
+  border-radius: 10px;
+  border-width: 0;
+ background-color: #CAD4BD;
+ padding: 3px;
+ }
+ .mode:hover .bottom_part{
+  transform: translateY(-6px);
+  opacity: 1;
+ }
+.mode:hover .top_part{
+  opacity: 0.8;
+  background-color:#EDD436;
+  transform: translateY(0);
+}
+#comp{
+ font-size: 13px;
+}
+ h1{
+  font-weight: bolder;
+  color: #DEE3D7;
+ }
+ .copyright{
+  color: #DEE3D7;
+ }
+.copyright:hover{
+  color: #EDD436;
+  cursor: pointer;
+}
+#instagram{
+  border: 1px solid;
+  border-width: 0;
+  border-radius: 50%;
+}
+.i:hover{
+  transition: 0.2s;
+  transition-timing-function: ease-in;
+  transform: scale(0.75);
+  opacity: 1;
+  cursor: pointer;
+}
+.i{
+  opacity: 0.8;
+}
+#mode{
+  font-weight: bolder;
+  color: #ff0057;
+  text-transform: capitalize;
+  opacity: 0.6;
+} 
+ [type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+[type=radio] + img {
+  cursor: pointer;
+  margin: 5px;
+  opacity: 0.4;
+}
+[type=radio]:checked + img {
+ transform: scale(0.75);
+opacity: 1;
+}
+.link{
+  color: #fff;
+  opacity: 0.8;
+}
+.link:hover{
+  text-decoration: none;
+}
+ 
+ 
 
- *{
- 	margin: 10px;
- 	padding: 10px;
- }
- body{
- 	background: #212121;
-
- }
- .table{
- 	height: 700px;
- 	width: 500px;
- 	background-color: slategrey;
- 	border: 3px slategrey solid;
- 	border-radius: 10px;
- }
- #h{
- 	 font-family: 'Bebas Neue', cursive;
-
- 	font-size: 4em;
- 	 text-align: center;
- 	 font-weight: lighter;
- 	 color: white;
- 	 margin: 0px;
- 	 padding: 0px;
- 	 
- 	 
- }
- .flex{
- 	
- 	display: flex;
- 	justify-content: space-around;
- 	flex-direction: row;
- 	
- }
- .box{
- 	height: 95px;
- 	width: 95px ;
- 	border: 5px solid #212121;
- 	border-radius: 5px;
- 	margin: 0px;
- 	padding: 0px;
- 	background-color: #212121;
- 	color: white;
- 	font-size: 55px;
- 	font-family: 'Ubuntu', sans-serif;
-    text-align: center;
- 	
- }
-#reset{
-	background-color:#212121 ;
-	border: 2px;
-	border-radius: 3px;
-	color: white;
-	height: 50px;
-	width: 120px;
-}
-#reset:hover{
-	cursor: pointer;
-	background: #000;
-}
-.box:hover{
-	cursor: pointer;
-	background: #000;
-	border: 5px solid #000;
-}
-.human{
-	font-family: 'Roboto Mono', monospace;
-	color: white;
-	font-size: 1em;
-	padding: 0px;
-	margin: 0px;
-}
-.computer{
-	font-family: 'Roboto Mono', monospace;
-	color: white;
-	font-size: 1em;
-	padding: 0px;
-	margin: 0px;
-}
-.form{
-	width:500px;
-	height:20px;
-	background-color: grey;
-	border: 2px;
-}
-#play{
-	background-color:#212121 ;
-	border: 2px;
-	border-radius: 3px;
-	color: white;
-	height: 50px;
-	width: 120px;
-	padding: 0px;
-	margin: 0px;
-}
-#play:hover{
-	cursor: pointer;
-	background: #000;
-}
