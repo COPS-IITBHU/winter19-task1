@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <h1>Tic-Tac-Toe</h1>
+        </header>
+        <div class="chance">
+                <div id="c1" class="disp-btn">P1-Turn</div>
+                <div id="c2" class="disp-btn">P2-Turn</div>
+        </div>
+        <div class="game-area">
+            <div class="row row-1">
+                <div id="0" class="game-btn">#</div>
+                <div id="1" class="game-btn">#</div>
+                <div id="2" class="game-btn">#</div>
+            </div>
+            <div class="row row-2">
+                <div id="3" class="game-btn">#</div>
+                <div id="4" class="game-btn">#</div>
+                <div id="5" class="game-btn">#</div>
+            </div>
+            <div class="row row-3">
+                <div id="6" class="game-btn">#</div>
+                <div id="7" class="game-btn">#</div>
+                <div id="8" class="game-btn">#</div>
+            </div>
+            <div class="setting">
+                <button onClick="initialiser()" id = "R"class="btn"> Reset</button>
+                <input type="submit" class="btn" id = "1P"value="1-Player">
+                <input type="submit" class="btn" id = "2P"value="2-Player">
+                <input type="submit" class="btn" id = "X" value="Choose-X">
+                <input type="submit" class="btn" id = "Y" value="Choose-O">
+            </div>
+        </div>
+    </div>
+    <div class="endGame">
+        <div id="vijay"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
