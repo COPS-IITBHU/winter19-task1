@@ -1,0 +1,139 @@
+html{
+    background-image: url(images/tic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;;
+}
+.container{
+    width: 450px;
+    height: 450px;
+    border: 4px solid #12c2e9;
+    margin: 100px auto;
+    margin-bottom: 0;
+    background: linear-gradient(to right, #0f2027,#203a43, #2c5364);
+}
+.height1{
+    height: 550px;
+}
+.height2{
+    height: 500px;
+}
+.second{
+    width: 446px;
+}
+.third{
+    position: relative;
+    background: white;
+    background: linear-gradient(to right, #0f2027,#203a43, #2c5364);
+}
+
+
+.square{
+    display: inline-block;
+    margin: 0px;
+    width: 146.5px;
+    height: 146.5px;
+    background-color: white;
+}
+.top{
+    text-align: center;
+    font-size: 100px;
+    font-size: 800;
+    color: #FFDC00;
+}
+h1{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 60px;
+    color: aqua;
+}
+h2{
+    margin: 30px;
+    text-align: center;
+}
+button{
+    font-size: 22px;
+    width: 160px;
+    border: 1px solid black;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin: 0 30px;
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    cursor: pointer;
+}
+button:hover{
+    color: black;
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
+
+#playbtn ,#playagain{
+    font-size: 1.5em;
+    width: 160px;
+    display: block;
+    margin: 25px auto;
+    border-radius: 5px;
+    border: 1px solid #011627;
+    text-align: center;
+    padding: 8px;
+    background-color: #011627;
+    color: #FFF;
+    cursor: pointer;
+    transition: 100ms width ease-in;
+}
+#playagain:hover{
+    width: 200px;
+}
+.hide{
+    display: none;
+}
+.active{
+    color: black;
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
+.red{
+    color: red;
+}
+.fade-in{
+    animation: fadeIn ease 0.5s;
+}
+.fade-out{
+    animation: fadeOut ease 0.5s;
+}
+@keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+.h3{
+    text-align: center;
+    font-size: 80px ;
+    margin: 50px 0 60px 0;
+    color: gold;
+}  
+.center{
+    margin-left: 140px;
+}
+.name{
+    font-size: 60px;
+    color: gold;
+    text-align: center;
+    margin: 60px 0;
+}
