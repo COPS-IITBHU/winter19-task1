@@ -31,18 +31,19 @@ The deadline of the above challenge is 22th of April.
 -   Complete the task by adding all the required files in your project.
 -   Make sure that you add the files in the separate folder created and not put the files directly in the home folder.
 -   When done, commit your work locally and push it to origin.
--   Make a pull request to our repository with proper description.
+-   Deploy your game online.
+-   Make a pull request to our repository with proper description and url where you have deployed your game.
 -   Let us review your pull request.
 
-## Resources:  
-### Start with the basics. 
-* [Basic HTML Tutorial](https://www.freecodecamp.org/news/best-html-html5-tutorial/)  
-* [Basic CSS Tutorial](https://www.freecodecamp.org/news/best-css-and-css3-tutorial/)  
-* [JavaScript from Scratch](https://www.udacity.com/course/intro-to-javascript--ud803)  
-* [Document Object Model (DOM) Manipulation](https://youtu.be/0ik6X4DJKCc). 
-  
-*But hey you can skip all of that if you aren't a beginner in Dev and...*  
-  
+## Resources:
+### Start with the basics.
+* [Basic HTML Tutorial](https://www.freecodecamp.org/news/best-html-html5-tutorial/)
+* [Basic CSS Tutorial](https://www.freecodecamp.org/news/best-css-and-css3-tutorial/)
+* [JavaScript from Scratch](https://www.udacity.com/course/intro-to-javascript--ud803)
+* [Document Object Model (DOM) Manipulation](https://youtu.be/0ik6X4DJKCc).
+
+*But hey you can skip all of that if you aren't a beginner in Dev and...*
+
 ### Jump into action: Task 1
 * [Build a Tic Tac Toe game](https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/build-a-tic-tac-toe-game)
 * [Make Tic Tac Toe: Youtube](https://www.youtube.com/watch?v=XwPVlXb5thI)
