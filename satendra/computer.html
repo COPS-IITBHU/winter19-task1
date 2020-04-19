@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="nav">
+        Tic Tac Toe
+    </div> 
+    <div style="position: relative;;top: 10vh;display: flex;width: 100%;justify-content: center;align-items: center;"> 
+    <div class="opening" id="opening">
+        <input placeholder="User Name" type="text" name="Username" id="username">
+        <br><div class="color"><div style="font-size: x-large;align-items: center;display: flex;justify-content: center;">Color</div>
+        <div class="colors" id="green" onclick="selectcolor(this.id)"></div>
+        <div class="colors red" id="red" onclick="selectcolor(this.id)"></div></div>
+        <button onclick="submit()">Submit</button>
+    </div></div>
+        <div class="main" id="main">
+        <div class="table">
+            <div class="squares unfilled" id="1" onclick="move(this.id)"></div>
+            <div class="squares unfilled" id="2" onclick="move(this.id)"></div>
+            <div class="squares unfilled" id="3" onclick="move(this.id)"></div>
+            <div class="squares unfilled" id="4" onclick="move(this.id)"></div>
+            <div class="squares unfilled" id="5" onclick="move(this.id)"></div>
+            <div class="squares unfilled" id="6" onclick="move(this.id)"></div>
+            <div class="squares unfilled" id="7" onclick="move(this.id)"></div>
+            <div class="squares unfilled" id="8" onclick="move(this.id)"></div>
+            <div class="squares unfilled" id="9" onclick="move(this.id)"></div>
+        </div>
+        
+    </div>  
+</body>
+<script src="computer.js"></script>
+</html>

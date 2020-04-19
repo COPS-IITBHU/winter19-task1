@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="nav">
+        Tic Tac Toe
+    </div> 
+    <div style="position: relative;;top: 10vh;display: flex;width: 100%;justify-content: center;align-items: center;"> 
+    <div class="opening" id="opening">
+        <input placeholder="User 1 Name" type="text" name="User1name" id="user1name">
+        <br><div class="color"><div style="font-size: x-large;align-items: center;display: flex;justify-content: center;">Color</div>
+        <div class="colors" id="greenu1" onclick="selectcolor(this.id)"></div>
+        <div class="colors red" id="redu1" onclick="selectcolor(this.id)"></div>
+        
+        </div>
+        <div class="u2">
+        <input placeholder="User 2 Name" type="text" name="User2name" id="user2name">
+        <button onclick="comp()">CPU</button>
+        </div>
+        <br><div class="color"><div style="font-size: x-large;align-items: center;display: flex;justify-content: center;">Color</div>
+        <div class="colors" id="greenu2" onclick="selectcolor(this.id)"></div>
+        <div class="colors red" id="redu2" onclick="selectcolor(this.id)"></div>
+        </div>
+        <button onclick="submit()">Submit</button>
+    </div></div>
+        <div class="main" id="main">
+        <div class="table">
+            <div class="squares unfilled" id="00" onclick="move(this.id)"></div>
+            <div class="squares unfilled" id="01" onclick="move(this.id)"></div>
+            <div class="squares unfilled" id="02" onclick="move(this.id)"></div>
+            <div class="squares unfilled" id="10" onclick="move(this.id)"></div>
+            <div class="squares unfilled" id="11" onclick="move(this.id)"></div>
+            <div class="squares unfilled" id="12" onclick="move(this.id)"></div>
+            <div class="squares unfilled" id="20" onclick="move(this.id)"></div>
+            <div class="squares unfilled" id="21" onclick="move(this.id)"></div>
+            <div class="squares unfilled" id="22" onclick="move(this.id)"></div>
+        </div>
+        
+    </div>  
+</body>
+<script src="main.js"></script>
+</html>
