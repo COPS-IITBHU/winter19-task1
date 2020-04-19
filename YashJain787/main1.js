@@ -196,7 +196,7 @@ function init(player,opponent){
     function draw(player,id){
         var squares=document.querySelectorAll(".square");
         if(player=="x"){
-            squares[id].style.backgroundImage="url(images/X.png)";    
+            squares[id].style.backgroundImage="url(images/cross.png)";    
         }
         else{
             squares[id].style.backgroundImage="url(images/zero.png)";
