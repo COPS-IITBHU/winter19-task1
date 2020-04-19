@@ -39,16 +39,16 @@ function move(id){
         allmoves.push(id);
         removemove(id);
         document.getElementById(id).style.backgroundColor=ucolor;
-        if(win()){
+        if(win(usermoves)){
             alert("You Won!! - This was immpossible")
         }
         checkdraw();
         aimoves();
     }
 }
-function win(){
+function win(player){
     for(let i=0;i<winingcomb.length;i++){
-    let res =winingcomb[i].every(e => usermoves.includes(e));
+    let res =winingcomb[i].every(e => player.includes(e));
     if(res==true) return true;
     }
     return false;
@@ -67,7 +67,7 @@ function randomInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 function randomMove(){
-    let move = randomInteger(1,6);
+    let move = randomInteger(1,9);
     move = move.toString();
     if(movesleft.includes(move)){
         document.getElementById(move).style.backgroundColor=ccolor;
@@ -95,6 +95,7 @@ function aimoves(){
                     break;
                 }else{
                     randomMove();
+                    break;
                 }
             }else if(tempwin2.every(e => usermoves.includes(e))){
                 possibleMove=winingcomb[i][0];
@@ -102,6 +103,7 @@ function aimoves(){
                     break;
                 }else{
                     randomMove();
+                    break;
                 }
             }else if(tempwin3.every(e => usermoves.includes(e))){
                 possibleMove=winingcomb[i][1];
@@ -109,6 +111,7 @@ function aimoves(){
                     break;
                 }else{
                     randomMove();
+                    break;
                 }
             }
         }
@@ -122,7 +125,9 @@ function aimoves(){
             removemove(possibleMove);
         }
     }
-    win();
+    if(win(cpumoves)){
+        alert("The intelligence created by humans beated humans in human made game");
+    };
     checkdraw();
     
 }
