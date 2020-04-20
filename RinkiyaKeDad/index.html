@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+    <div class="board container" id="board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+    </div>
+    <div class="winning-message container-fluid" id="winningMessage">
+        <div data-winning-message-text></div>
+        <button class="btn btn-warning btn-lg" id="restartButton">Restart</button>
+    </div>
+
+    <div class="chosing-message1 show container-fluid" id="chosingMessage1">
+        <h1>Modern Tic-Tac-Toe</h1>
+        <h5>By Arsh</h5>
+        <h3>Choose Mode</h3>
+
+        <div class="btn-group-vertical">
+            <button class="btn btn-success" id="oneButton">
+                <h1>One Player</h1>
+                <h1>Human as X</h1>
+            </button>
+            <button class="btn btn-primary" id="oneButtonO">
+                <h1>One Player</h1>
+                <h1>Human as O</h1>
+            </button>
+            <button class="btn btn-danger" id="twoButton">
+                <h1>Two Player</h1>
+            </button>
+        </div>
+
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>
