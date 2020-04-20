@@ -1,0 +1,117 @@
+:root{
+    --primary: #dddddd;
+    --dark: #333333;
+    --light: #ffffff;
+    --shadow: 5px 4px 5px rgba(71, 19, 138, 0.8);
+}
+html{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background: url(images/tic.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+}
+.container .setting{
+    display: grid;
+    grid-gap: 30px;
+}
+.container h1{
+    color: var(--light);
+    font-size: 5rem;
+    background: rgb(92, 25, 146);
+    text-align: center;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+}
+.chance{
+    background: transparent;
+    display: grid;
+    grid-gap: 20px;
+    /* width: 80%; */
+    align-content:center;
+    padding: 50px;
+    grid-template-columns: repeat(2,1fr);
+}
+.disp-btn{
+    background: var(--light);
+    color: rgb(4, 15, 75);
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 5px;
+    width: minmax(auto,auto);
+    height:minmax(auto,auto);
+    font-size: 2.5rem;
+    border: 3px solid rgb(4, 15, 75);;
+    box-shadow: 5px 4px 10px rgba(92, 82, 131, 0.8);
+}
+.game-area{
+    background: transparent;
+    display: grid;
+    grid-gap: 20px;
+    /* width: 80%; */
+    align-content:center;
+    padding: 50px;
+}
+.row {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+}
+.game-btn{
+    background: rgb(4, 15, 75);
+    color: var(--light);
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 5px;
+    width: minmax(auto,auto);
+    height:minmax(auto,auto);
+    font-size: 3.5rem;
+    border: 3px solid white;
+    box-shadow: 5px 4px 10px rgba(92, 82, 131, 0.8);
+}
+.setting{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+}
+.btn{
+    background: var(--light);
+    color: rgb(4, 15, 75);
+    justify-content: center;
+    /* padding-top: 10px; */
+    border-radius: 5px;
+    width: minmax(auto,auto);
+    height:minmax(auto,auto);
+    font-size: 2.5rem;
+    border: 3px solid rgb(4, 15, 75);
+    box-shadow: 5px 4px 10px rgba(92, 82, 131, 0.8);
+}
+.btn :hover{
+    background: rgb(4, 15, 75);
+    color: var(--light);
+    border: 3px solid var(--light);
+}
+.endGame {
+    display: none;
+    width: minmax(auto,auto);
+    height:minmax(auto,auto);
+    top: 355px;
+    background-color: rgba(205,133,63, 0.8);
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    border-radius: 5px;
+    color: rgb(252, 249, 249);
+    font-size: 2em;
+}
+.endGame #vijay{
+    color: white;
+    font-size: 3.5rem;
+    font-family: fantasy;
+}
