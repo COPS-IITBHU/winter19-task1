@@ -1,0 +1,60 @@
+<html>
+	
+	<body>
+	   <head>
+		  <div class='main'><h1>TIC TAC TOE </h2> </div>
+			<div class='sub'><h2>Enjoy</h2></div>
+	   </head>
+    <div class ='instrt'><font size='+2'>Instructions:</font>
+      <ul>
+        <li>Click to select ,select  both game mode and X or O before starting the game.</li>
+        <li>Once the game is over , click  restart to restart.</li>
+         <li>Board lights up once game is over and you will  receive an alert notification.</li>
+         <li>Board lights up green when any one user wins.</li>
+         <li>Board lights up red when the computer wins.</li>
+          <li>Board lights up grey when its a tie.</li>
+	<li>Reload page or press restart if you come across any glitch</li>
+        <li>Play in full screen mode for better experience.</li>
+      </ul>
+	<div><button onClick="window.location.reload()">Restart</button></div>
+    </div>
+		<div id='choiceplayer'>Select game mode
+			<div action="#">
+				<button onclick="SingleOp()">Select Single player mode</button>
+			<button onclick="TwoOp()">Select Two players mode</button>
+			</div>
+			
+		</div>
+		<div id='choicepawn'>Select type X or O
+			<div action="#">
+		<button onclick="Oop()">Select O</button> 
+		<button onclick="Xop()">Select X</button>
+			</div>
+			
+		</div>
+		
+		<table>
+			<tr class='row'>
+				<td id='0' class ='ele'></td>
+				<td id='1' class ='ele'></td>
+				<td id='2' class ='ele'></td>
+			</tr>
+			<tr class='row'>
+				<td id='3' class ='ele'></td>
+				<td id='4' class ='ele'></td>
+				<td id='5' class ='ele'></td>
+			</tr>
+			<tr class='row'>
+				<td id='6' class ='ele'></td>
+				<td id='7' class ='ele'></td>
+				<td id='8' class ='ele'></td>
+			</tr>
+		</table>
+	
+    <div class="footer">@copyright rtg</div>
+
+	
+	</body>  
+    <link rel="stylesheet " type="text/css" href ="style.css" />
+	<script type= "text/javascript" src="script.js"></script> 
+</html>
