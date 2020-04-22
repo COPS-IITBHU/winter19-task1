@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Tic Tac Toe</title>
+    </head>
+    <body>
+        <div class="endgame">
+            <div class="text"></div>
+        </div>
+        <div class="config">
+            <button class="friendbutton" onclick="set2player()">
+                With friend
+            </button>
+            <button onclick="setbot()">With bot</button>
+            <div class="botopt">
+                <button onclick="diff0()">Difficulty Human</button>
+                <button onclick="diff1()">Difficulty BOT</button>
+            </div>
+        </div>
+        <div class="flex_container">
+            <div class="left">
+                <div class="player playerl">You<br /></div>
+                <br />
+                <button onclick="startGame()">Replay</button>
+                <button onclick="config()">Configure</button>
+                <button onclick="chooseX()">Choose X</button>
+                <button onclick="chooseO()">Choose O</button>
+                <a
+                    class="me"
+                    href="https://ones-and-zeroes.github.io/site-node-1/"
+                    ><button>About Me</button></a
+                >
+            </div>
+            <div class="mid">
+                <table>
+                    <tr>
+                        <td class="cell" id="0"></td>
+                        <td class="cell" id="1"></td>
+                        <td class="cell" id="2"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell" id="3"></td>
+                        <td class="cell" id="4"></td>
+                        <td class="cell" id="5"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell" id="6"></td>
+                        <td class="cell" id="7"></td>
+                        <td class="cell" id="8"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="player right">Skynet<br /></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
