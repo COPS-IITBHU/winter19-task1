@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>the tictactoe game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1><b><i>THE TICTACTOE GAME</i></b></h1>
+    <div id="firstset">
+    <h2>choose an option below</h2>    
+    <button class="option1" onclick="set(1);">1 V 1</button>
+    <br>
+    <br>
+    <button class="option2" onclick="set(2);">1 V COMP</button>
+    </div>
+    <div id="secondset" class="notneeded">
+        <h2>Player 1 is X. Player 2 is O. Player 1 starts</h2>
+    </div>
+    <div id="finalset" class="notneeded">
+    <h2>choose your shape </h2>    
+    <button class="option1" onclick="setshape(1);">X</button>
+    <br>
+    <br>
+    <button class="option2" onclick="setshape(2);">O</button>    
+    </div>
+    <table id="cross" class="notneeded">
+        <tr>
+            <td><button id="a00" onclick='checkit(0,0);'></button></td>
+            <td><button id="a01" onclick='checkit(0,1);'></button></td>
+            <td><button id="a02" onclick='checkit(0,2);'></button></td>
+        </tr>
+        <tr>
+            <td><button id="a10" onclick='checkit(1,0);'></button></td>
+            <td><button id="a11" onclick='checkit(1,1);'></button></td>
+            <td><button id="a12" onclick='checkit(1,2);'></button></td>
+        </tr>
+        <tr>
+            <td><button id="a20" onclick='checkit(2,0);'></button></td>
+            <td><button id="a21" onclick='checkit(2,1);'></button></td>
+            <td><button id="a22" onclick='checkit(2,2);'></button></td>
+        </tr>
+    </table>
+    <hr>
+    <p></p>
+    <button class="restart" onclick="location.reload()">restart</button>
+    <h2 id="result"><i></i></h2>
+    <script src="main.js" ></script>
+</body>
+</html>
