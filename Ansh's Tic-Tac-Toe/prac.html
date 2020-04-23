@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="prac.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
+<style>
+body{
+background-image: url('4.jpg');
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+}
+*{
+	line-height: 1.0;
+}
+#demo {
+	font-size: 80px;
+	color:darkgrey;
+	margin-top: 530px;
+	text-align: center;
+	text-shadow: 5px 5px 5px red;
+	font-family:'Orbitron',cursive;
+}
+.e{
+	border-collapse: collapse;
+	position:absolute;
+	left:37%;
+	border-width:thick;
+	margin-top: 30px;
+}
+.x{
+	margin-top: 0%;
+	float:middle;
+}
+.cell{
+	border:7px solid white;
+	height:150px;
+	width:150px;
+	vertical-align: middle;
+	font-size: 100px;
+	background-color: black;
+	color:white;
+	cursor: pointer;
+	text-align: center;
+}
+.reset{
+  background-color: #FC6B01;
+  color:black;
+  border:solid;
+  border-radius: 30px;
+  padding: 25px 35px;
+  font-size: 35px;
+  cursor: pointer;
+  margin:10px;
+  font-family:'Rock Salt', cursive;
+}
+.reset:hover{
+	text-align: center;
+  background-color:black;
+  color:#FC6B01;
+  font-family:'Rock Salt', cursive;
+  cursor: pointer;
+}
+table tr:first-child td{
+border-top:0;
+}
+table tr:last-child td{
+border-bottom:0;
+}
+table tr td:first-child{
+border-left:0;
+}
+table tr td:last-child{
+border-right:0;
+}
+.b{
+	display:block;
+	text-align: center;
+	font-size: 65px;
+	color:red;
+	text-shadow: 10px 10px 5px black;
+	border-radius: 5px;
+	border-color: blue;
+	padding: 15px 25px;
+	font-family:'Rock Salt', cursive;
+}
+.qw{
+	text-align: center;
+}
+h2:hover{
+	display:block;
+	text-align: center;
+text-shadow:10px 10px 5px blue;
+}
+.qw{
+	text-align: center;
+}
+</style>
+<body>
+	<h2 class="b">"Tic-Tac-Toe!!"</h2>
+</div>
+<div class="qw">
+<button class="reset" onclick='window.location.href="index.html"'>Reset</button>
+</div>
+<div class="x">
+	<table class="e">
+		<tr>
+			<td class="cell" id="0" onclick="putvalue(id)"></td>
+			<td class="cell" id="1" onclick="putvalue(id)"></td>
+			<td class="cell" id="2" onclick="putvalue(id)"></td>
+		</tr>
+		<tr>
+			<td class="cell" id="3" onclick="putvalue(id)"></td>
+			<td class="cell" id="4" onclick="putvalue(id)"></td>
+			<td class="cell" id="5" onclick="putvalue(id)"></td>
+		</tr>
+		<tr>
+			<td class="cell" id="6" onclick="putvalue(id)"></td>
+			<td class="cell" id="7" onclick="putvalue(id)"></td>
+			<td class="cell" id="8" onclick="putvalue(id)"></td>
+		</tr>
+	</table>
+</div>
+<div id="demo"><emp></emp></div>
+
+</body>
+</html>
