@@ -136,7 +136,7 @@ function single() {
         cellElements.forEach(cell => {
             cell.classList.remove("circle");
             cell.classList.remove("cross");
-            cell.removeEventListener('click', handleClick)
+            cell.removeEventListener('click', handleClick);
 
 
         });
@@ -193,6 +193,7 @@ function single() {
         }
 
         cellElements[index].classList.add(mark);
+        cellElements[index].removeEventListener('click',handleClick);
         checkResultBot(mark);
     }
 
