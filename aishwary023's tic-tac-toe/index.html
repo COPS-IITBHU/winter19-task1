@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe by aishwary023</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  
+    
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark" id="top">
+        <div id="name">
+            <a href="https://aishwary023.github.io/tic-tac-toe/"><h1>Tic-Tac-Toe</h1></a>
+           
+        </div>
+        <div>
+            <h5>made with &#x2764 by<a href="https://github.com/aishwary023" id="nameGit" target="_blank"> Aishwary</a></h5>
+        </div>
+    </nav>
+
+
+    <div class="board" id="board">
+        <div id="1" class="cell" data-cell>
+
+        </div>
+        <div id="2" class="cell" data-cell>
+
+        </div>
+        <div id="3" class="cell" data-cell>
+
+        </div>
+        <div id="4" class="cell" data-cell>
+
+        </div>
+        <div id="5" class="cell" data-cell>
+
+        </div>
+        <div id="6" class="cell" data-cell>
+
+        </div>
+        <div id="7" class="cell" data-cell>
+
+        </div>
+        <div id="8" class="cell" data-cell>
+
+        </div>
+        <div id="9" class="cell" data-cell>
+
+        </div>
+    </div>
+
+    <div class="start" id="startPage">
+        <div class="custom-control custom-radio">
+            <input type="radio" id="singleBtn" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label" for="singleBtn">SinglePlayer</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="multiBtn" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label" for="multiBtn">MultiPlayer</label>
+          </div>
+        
+          <div class="custom-control custom-radio">
+            <input type="radio" id="crossBtn" name="customRadio1" class="custom-control-input">
+            <label class="custom-control-label" for="crossBtn">X</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="circleBtn" name="customRadio1" class="custom-control-input">
+            <label class="custom-control-label" for="circleBtn">O</label>
+          </div>
+        <button class="btn btn-success" id="startBtn" onclick="toBoard()">START</button>
+    </div>
+
+    <div class="end" id="endPage">
+        <div class="conatiner-fluid" id="winMessage"></div>
+        <button class="btn btn-success" id="restartBtn" onclick="toStart()">RESTART</button>
+    </div>
+    
+</body>
+<script src="script.js" ></script>
+</html>
