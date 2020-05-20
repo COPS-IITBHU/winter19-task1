@@ -1,0 +1,53 @@
+* {
+	box-sizing: border-box;
+	font-family: Helvetica;
+	text-align: center;
+}
+
+body {
+	background-color: maroon;
+}
+
+.column {
+	background:#fb4400;
+	float: left;
+	border: 2px solid black;
+	width: 33.33%;
+	position: relative;
+}
+
+.cell {
+	width: 100%;
+	padding-top: 100%;
+	position: relative;
+}
+
+.grid {
+	width: 25%;
+	position: relative;
+	left: 37.5%;
+	margin-top: 50px;
+}
+
+.cell:hover {
+	background-color: lightgray;
+	opacity: 0.6;
+}
+
+.text {
+	width: 100%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	font-size: 1.5em;
+}
+
+.row {
+	width: 100%;
+}
+
+label {
+	font-size: 1.3em;
+}
