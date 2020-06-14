@@ -1,0 +1,56 @@
+body {
+  text-align: center;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  color: #17706e;
+}
+
+td {
+  margin: 0;
+  padding: 1rem;
+  color: #17706e;
+  border-color: black;
+}
+
+.scoreBoard {
+  background-color: #b6eb7a;
+  border-radius: 10%;
+  display: inline-block;
+  margin: 15px;
+}
+
+.gameboard {
+  background-color: #f7f7ee;
+  width: 25rem;
+  height: 30rem;
+  margin: 5px;
+  display: inline-block;
+  /*  border-width: 1%;
+  border: solid;
+  border-color: #fb7813; */
+}
+
+.square {
+  font-size: 6rem;
+  width: 31%;
+  height: 31%;
+  display: inline-block;
+  box-shadow: 0 0 4px 2px yellow, 0 0 4px 2px red;
+  position: relative;
+  top: 3%;
+  cursor: pointer;
+}
+.styl{
+  font-size: 4rem;
+    color: #17706e;
+}
+
+.hide {
+  display: none;
+}
