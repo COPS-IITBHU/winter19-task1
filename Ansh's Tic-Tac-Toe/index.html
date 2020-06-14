@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="scripty.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
+<style>
+body{
+background-image: url('4.jpg');
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+}
+*{
+	text-align:center;
+	line-height: 1.0;
+}
+.a1{
+	display:block;
+	font-family:'Orbitron',cursive;
+	color:black;
+	text-align: center;
+	font-size: 75px;
+	text-shadow: 10px 10px 5px white;
+}
+.b{
+	display:block;
+	text-align: center;
+	font-size: 65px;
+	color:red;
+	text-shadow: 10px 10px 5px black;
+	border-radius: 5px;
+	border-color: blue;
+	padding: 15px 25px;
+	font-family:'Rock Salt', cursive;
+
+}
+h2:hover{
+	display:block;
+	text-align: center;
+text-shadow:10px 10px 5px blue;
+}
+.c,.d{
+	display:block;
+	text-align: center;
+	font-family:'Orbitron',cursive;
+	font-size: 30px;
+}
+.h{
+	display:block;
+	text-align: center;
+	font-family:'Orbitron',cursive;
+	font-size: 30px;
+	margin-top: 100px;
+}
+.link
+{
+	color:black;
+}
+.link:hover
+{
+background-color:black;
+  color:#FC6B01;}
+.button2,.button3{
+  background-color: #FC6B01;
+  color:black;
+  border:solid;
+  border-radius: 30px;
+  padding: 25px 35px;
+  text-align: center;
+  font-size: 35px;
+  cursor: pointer;
+  margin:10px;
+  font-family:'Rock Salt', cursive;
+
+}
+
+.button2:hover,.button3:hover,.reset:hover{
+	text-align: center;
+  background-color:black;
+  color:#FC6B01;
+  font-family:'Rock Salt', cursive;
+  cursor: pointer;
+}
+.cen{
+	float: middle;
+	text-align: center;
+}
+.cent{
+	display:none;
+	float: middle;
+	text-align: center;
+}
+.cell{
+	border:7px solid white;
+	height:150px;
+	width:150px;
+	vertical-align: middle;
+	font-size: 100px;
+	background-color: black;
+	color:white;
+	cursor: pointer;
+	text-align: center;
+}
+#demo {
+	font-size: 80px;
+	color:darkgrey;
+	margin-top: 530px;
+	text-align: center;
+	text-shadow: 5px 5px 5px red;
+	font-family:'Orbitron',cursive;
+}
+.e{
+	border-collapse: collapse;
+	position:absolute;
+	left:37%;
+	border-width:thick;
+	margin-top: 30px;
+}
+.x,.i,.j{
+	display:none;
+}
+.x{
+	margin-top: 0%;
+}
+
+.f,.g,.k{
+	 background-color:#0338A0;
+  color:#E9FC01;
+  border:solid;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 50px;
+  cursor: pointer;
+  margin:10px;
+  font-family:'Rock Salt', cursive;
+  margin-top: 50px;
+
+}
+.f:hover,.g:hover,.k:hover{
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 55px;
+  cursor: pointer;
+  margin:10px;
+  margin-top: 50px;
+  font-family:'Rock Salt', cursive;
+}
+.reset{
+	margin-left: 10px;
+  background-color: #FC6B01;
+  color:black;
+  border:solid;
+  border-radius: 30px;
+  padding: 25px 35px;
+  font-size: 35px;
+  cursor: pointer;
+  margin:10px;
+  font-family:'Rock Salt', cursive;
+}
+table tr:first-child td{
+border-top:0;
+}
+table tr:last-child td{
+border-bottom:0;
+}
+table tr td:first-child{
+border-left:0;
+}
+table tr td:last-child{
+border-right:0;
+}
+
+.np{
+	margin-top: 80px;
+	font-size: 40px;
+	color:black;
+}
+.np1,.np2{
+	margin-top: 50px;
+	font-size: 30px;
+	color:black;
+	background-color: grey;
+}
+.l{
+	border-collapse: collapse;
+	text-align: center;
+	margin-left: 41%;
+}
+#plturn{
+	margin-top: 0%;
+	font-size: 40px;
+	color:#045DCF;
+}
+</style>
+<body>
+<h1 class="a1"><b>Welcome to our Game:</b></h1>
+<h2 class="b">"Tic-Tac-Toe!!"</h2>
+<h3 id ="plturn"></h3>
+<p class="c"><b>Select the Game mode:</b></p>
+<div class ="cent">
+<button class="reset" onclick='window.location.href="index.html"'>Reset</a></button></div>
+<div class="cen"><button class="button2"><a href="prac.html" class ="link">Single Player Mode</button></a><p class="d"><b>OR</b></p><button class="button3" onclick ="aname()"><u>Two Player Mode</u></button>
+</div>
+
+<div class="i">
+<div class="h"><b>Choose ur Symbol!!</b></div>
+<button class="f" id="f" onclick ="turn(id)">O</button><p>OR</p><button class="g" id="g" onclick ="turn(id)">X</button>
+</div>
+
+<div class="j">
+	<p class="np">Please enter the name of the players:</p>
+	<table class="l">
+	<tr>
+		<td class="np1">Player 1:</td>
+		<td class="np2"><input type="text" id="myText1" name="fname1" value="Player1"></td>
+	</tr>
+	<tr>
+		<td class="np1">Player 2:</td>
+		<td class="np2"><input type="text" id="myText2" name="fname1" value="Player2"></td>
+	</tr>
+</table>
+	<button class="k" id="k" onclick="ox()">Submit</button>
+</div>
+<div class="x">
+	<table class="e">
+		<tr>
+			<td class="cell" id="0"></td>
+			<td class="cell" id="1"></td>
+			<td class="cell" id="2"></td>
+		</tr>
+		<tr>
+			<td class="cell" id="3"></td>
+			<td class="cell" id="4"></td>
+			<td class="cell" id="5"></td>
+		</tr>
+		<tr>
+			<td class="cell" id="6"></td>
+			<td class="cell" id="7"></td>
+			<td class="cell" id="8"></td>
+		</tr>
+	</table>
+</div>
+<div id="demo"><emp></emp></div>
+
+</body>
+</html>

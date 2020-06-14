@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0px;
+}
+.nav{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    height: 30px;
+    background-color: #3700B3;
+    color: white;
+    font-family: cursive;
+    font-size: x-large;
+}
+.main{
+    background-color: #6200EE;
+    display: none;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    top: 4vh;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+}
+.table{
+    background-color: #bb86fc;
+    display: flex;
+    width: 360px;
+    height: 360px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+body{
+    background-color: #6200EE;
+}
+.squares{
+    width: 118px;
+    height: 118px;
+    background-color: white;
+    border: 1px solid;
+    transition: transform 0.2s;
+}
+.squares:hover{
+    transform: scale(1.05);
+    background-color: yellow;
+    cursor: pointer;
+}
+.opening{
+    justify-self: center;
+    align-self: center;
+    background-color: wheat;
+    display: flex;
+    width: 280px;
+    height: 280px;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px;
+}
+.color{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: cursive;
+}
+.colors{
+    background-color: green;
+    width: 40px;
+    height:40px;
+    border-radius: 3px;
+    transition: transform 0.2s;
+}
+.colors:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.red{
+    background-color: red;
+}
+input{
+    height: 30px;
+    border: 1px solid ;
+    border-radius: 3px;
+    padding-left: 5px;
+}
+.u2{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    height: 30px;
+    border-radius: 5px;
+    border: #3700B3 1px solid;
+    background-color: white;
+    font-size: large;
+    transition: transform 0.3s;
+}
+button:hover{
+    background-color: #6200EE;
+    color: white;
+    transform: scale(1.1);
+    cursor: pointer;
+}

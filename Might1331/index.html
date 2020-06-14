@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>TIC-TAC-TOE</title>
+</head>
+
+<body>
+  <a href="index.html">
+    <h1>Let's Play Tic-Tac-Toe!</h1>
+  </a>
+  <div class="scoreBoard">
+    <table>
+      <tr>
+        <td>🎊
+          <a href="index.html"><button type="button" name="button">Reset Score Board</button></a></td>
+        <td>Player-X</td>
+        <td>Player-O</td>
+      </tr>
+      <tr>
+        <td>Score :</td>
+        <td class="X-score">0</td>
+        <td class="O-score">0</td>
+    </table>
+
+  </div>
+  <br>
+  <div class="options">
+    <button type="button" name="button" class="won newGame">Reset GameBoard</button>
+    <button type="button" name="button" class="1v1 X">Play 1vs1(Start with X)</button>
+    <button type="button" name="button" class="1v1 O">Play 1vs1(Start with O)</button>
+    <button type="button" name="button" class="solo X">Play Solo(Start with X)</button>
+    <button type="button" name="button" class="solo O">Play Solo(Start with O)</button>
+  </div>
+  <div class="gameboard">
+    <div class="square hide">_</div>
+    <div class="square hide">_</div>
+    <div class="square hide">_</div>
+    <div class="square hide">_</div>
+    <div class="square hide">_</div>
+    <div class="square hide">_</div>
+    <div class="square hide">_</div>
+    <div class="square hide">_</div>
+    <div class="square hide">_</div>
+    <div class="X styl won  hide">Player-X<br /> You Win!<br /></div>
+    <div class="O styl won hide">Player-O<br /> You Win!<br /></div>
+    <div class="_ styl won hide">DRAW! Click new game to settle this.<br /></div>
+    <button type="button" name="button" class="won newGame hide">Reset Board</button>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>

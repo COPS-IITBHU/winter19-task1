@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Single PLayer (Easy Version)</title>
+    <link href="https://fonts.googleapis.com/css?family=Anton|Comic+Neue|Dancing+Script|Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.ico">
+  </head>
+  <body>
+    <header>
+      Single Player Tic Tac Toe(Easy Version)
+    </header>
+
+    <div class="main-content">
+
+      <div class="container">
+
+        <h3>Enter your name below and click the Start button to start the game</h3>
+
+        <h5>
+          By default, the marker for player 1 is <strong>X</strong>
+          <br>
+          <em><small>You Can Change by clicking reverse</small></em>
+        </h5>
+
+        <div class="player-info-container">
+          <input type="text" id='player_1' placeholder="Player Name" class='infos'>
+
+        </div>
+
+        <div class="start-game-container">
+
+          <input type="button" value="Start Game" class='btn btn-primary' id='start-game'>
+
+          <input type="button" value="Reverse the markers" id="reverse" class='btn btn-primary'>
+
+        </div>
+
+        <div class="game-area">
+
+          <div class="rows">
+            <div class="cell" id='0'>
+
+            </div>
+            <div class="cell" id='1'>
+
+            </div>
+            <div class="cell" id='2'>
+
+            </div>
+          </div>
+          <div class="rows">
+            <div class="cell" id='3'>
+
+            </div>
+            <div class="cell" id='4'>
+
+            </div>
+            <div class="cell" id='5'>
+
+            </div>
+          </div>
+          <div class="rows">
+            <div class="cell" id='6'>
+
+            </div>
+            <div class="cell" id='7'>
+
+            </div>
+            <div class="cell" id='8'>
+
+            </div>
+          </div>
+
+
+        </div>
+
+        <div id="winner-area">
+
+        </div>
+
+        <div class='reset-area'>
+          <button type="button" id='reset' class='btn btn-warning'>Reset Board</button>
+        </div>
+
+        <div class="scores-area">
+          <button type="button" name="button" class='btn btn-primary' id='scores'>Scores</button>
+          <p></p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <footer>
+      <button type="button" name="button" class='btn btn-primary'>
+        <a href="index.html">
+          Reset The Mode
+        </a>
+      </button>
+    </footer>
+
+    <script src="dumb.js" charset="utf-8"></script>
+
+  </body>
+</html>

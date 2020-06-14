@@ -1,0 +1,65 @@
+header{
+  background-color: white;
+  background-color: rgba(100, 100, 250, 0.8);
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 30px;
+}
+body{
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+  background-color: #f0f8ff;
+}
+
+a{
+  color:white;
+  text-decoration: none;
+}
+a:hover{
+  color:white;
+  text-decoration: none;
+}
+
+.main-content{
+  text-align: center;
+}
+button,input[type='button']{
+  margin: 10px;
+}
+input[type='text']{
+  border-radius: 10px;
+  height:40px;
+  margin:3px;
+
+}
+
+.game-area{
+  width:420px;
+  margin: 0 auto;
+  display: none;
+}
+
+.rows{
+  width:400px;
+  display: flex;
+}
+
+.cell{
+  height: 125px;
+  width: 125px;
+  background-color: #dddddd;
+  border:1px solid black;
+  font-size: 80px;
+}
+.reset-area{
+  width:420px;
+  margin:0 auto;
+  display: none;
+}
+.scores-area{
+  width:420px;
+  margin:0 auto;
+  display: none;
+}

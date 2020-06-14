@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+    margin: 0;
+    position: relative;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background-image: url(background.jpg);
+    transition: all 0.3s;
+}
+
+td {
+    border: 10px solid transparent;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 150px;
+    color: #c5c8c6ee;
+    cursor: pointer;
+}
+
+.cell {
+    background-color: #c5c8c6aa;
+    border-radius: 25%;
+}
+
+table {
+    margin-top: 10vh;
+    display: inline-block;
+    border-collapse: separate;
+}
+
+.flex_container {
+    display: flex;
+    background-color: transparent;
+}
+
+.endgame {
+    text-align: center;
+    border-radius: 20px;
+    font-size: 80px;
+    display: none;
+    position: absolute;
+    background-color: #c5c8c666;
+    color: #1d1f21dd;
+    top: 30%;
+    left: 28%;
+    height: 20%;
+    width: 50%;
+}
+
+.mid {
+    text-align: center;
+    flex-grow: 2;
+    height: 100vh;
+}
+
+.left {
+    padding-top: 50px;
+    flex-grow: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #5e8d87aa;
+}
+
+.right {
+    padding-top: 50px;
+    flex-grow: 1;
+    height: 100wh;
+    flex-grow: 1;
+    background-color: #5f819daa;
+}
+
+.config {
+    display: none;
+    background-color: #373b41bb;
+    border-radius: 20px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-evenly;
+    top: 10%;
+    left: 28%;
+    height: 50%;
+    width: 50%;
+}
+
+.botopt {
+    display: none;
+    justify-content: space-around;
+}
+
+button:hover {
+    color: #5f819d;
+}
+
+button {
+    color: #8abeb7;
+    padding: 20px 0px 20px 0px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 20px;
+    outline: none;
+    position: relative;
+    transition: all 0.3s;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+.player {
+    text-align: center;
+    font-size: 50px;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+}
+
+.me {
+    text-align: center;
+    padding-top: 80px;
+}
