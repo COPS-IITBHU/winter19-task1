@@ -1,0 +1,42 @@
+body {
+    background-color: beige;
+    margin: 10px 30%;
+    /* border: 10px solid black; */
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    min-width: 250px;
+}
+.setting #restart {
+    display: block;
+    margin: 10px auto;
+}
+.setting p {
+    display: inline;
+}
+.score p {
+    display: inline;
+    margin: 5px;
+}
+.score span {
+    color: blueviolet;
+}
+.board {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    font-size: 45px;
+    width: 300px;
+}
+tr {
+    background-color: bisque;
+    height: 100px;
+    width: 100px;
+}
+th {
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}
